@@ -38,3 +38,6 @@ PRODUCT_PROPERTY_OVERRIDES += persist.service.adb.enable=1
 # OTA UPDATE 
 $(call inherit-product-if-exists, vendor/aim/aim_ota/ota.mk)
 
+
+# include definitions for SDCLANG
+ include vendor/aim/sdclang/sdclang.mk
