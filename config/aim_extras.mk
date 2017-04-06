@@ -19,7 +19,8 @@ PRODUCT_PACKAGES += \
     Gallery2 \
     Launcher3 \
     ViaBrowser \
-    Phonograph
+    Phonograph \
+    Turbo
 
 # AIM OTA
 PRODUCT_PACKAGES += \
