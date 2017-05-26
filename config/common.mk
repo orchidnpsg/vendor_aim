@@ -30,10 +30,6 @@ PRODUCT_COPY_FILES += \
     vendor/aim/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/aim/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
 
-# Bootanimation
-PRODUCT_COPY_FILES += \
-    vendor/aim/prebuilt/common/bootanimation/bootanimation.zip:system/media/bootanimation.zip
-
 
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/aim/overlay/common \
@@ -117,3 +113,6 @@ PRODUCT_PACKAGES += \
 
 # Recommend using the non debug dexpreopter
 USE_DEX2OAT_DEBUG ?= false
+
+#Aim extra for custom packages
+include vendor/aim/config/aim_extras.mk
