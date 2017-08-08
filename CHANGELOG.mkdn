@@ -1,0 +1,219 @@
+
+ (->) AIM ROM Ver 2.0 Changelog
+ ====================================== 
+
+
+ [*] 08/08/2017
+  *******************    
+
+
+ ▪ project android/
+ ▪ ad2d94d manifest: android-7.1.2_r24 -> android-7.1.2_r29
+
+ ▪ project external/skia/
+ ▪ da4a326d8 Merge tag 'android-7.1.2_r29' into cm-14.1
+
+ ▪ project frameworks/base/
+ ▪ d20432954ac Merge pull request #3 from Aimrom-op2/N
+ ▪ 41f615db402 libhwui: enable our advanced compiler features
+ ▪ 6d040fc1eb7 AppOps: Fix yet another deadlock
+
+ ▪ project frameworks/opt/net/wifi/
+ ▪ 1f8fc743 Merge tag 'android-7.1.2_r29' into cm-14.1
+
+ ▪ project hardware/qcom/audio-caf/msm8916/
+ ▪ 7fcca3ec Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8937/
+ ▪ 9dbd0629 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8952/
+ ▪ 34f4914d Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8960/
+ ▪ e2486667 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8974/
+ ▪ 0d8579c5 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8994/
+ ▪ 9dcddd7c Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio-caf/msm8996/
+ ▪ 5b125476 Fix security vulnerability: Equalizer setParameter memory overflow
+
+ ▪ project hardware/qcom/audio/default/
+ ▪ a4f1bc58 Merge tag 'android-7.1.2_r29' into cm-14.1
+
+ ▪ project packages/apps/Jelly/
+ ▪ f20c0a4 Jelly: Add Yandex search engine
+
+ ▪ project packages/apps/Settings/
+ ▪ 31dbb6d032 Lets hide this
+ ▪ c2b01d8535 Settings: Support color engine
+
+ ▪ project packages/apps/freedomhub/
+ ▪ cb80be3713 Forgot to add icon
+
+ ▪ project system/bt/
+ ▪ 80cca318 Revert "Merge tag 'LA.UM.5.5.r1-05300-8x96.0' into cm-14.1"
+
+ [*] 08/07/2017
+  *******************    
+
+
+ ▪ project packages/apps/OmniStyle/
+ ▪ ed7169d Revert "OmniStyle: Add more headers"
+ ▪ 7e5bb0f OmniStyle: Added 'Colorful' headers
+
+ [*] 08/06/2017
+  *******************    
+
+
+ ▪ project frameworks/base/
+ ▪ f9e257cdcfe SystemUI: Expose notification media queue text color
+ ▪ 80b4f968821 Merge pull request #2 from Aimrom-op2/N
+ ▪ 09e66f55a4f webview_packages: fix incorrect signatures
+ ▪ d7bae093a2a webview_packages: correct signature definition for Chrome Stable
+ ▪ 5d0926e61ef webview_packages: prefer the more powerful webview packages
+
+ ▪ project hardware/qcom/display-caf/apq8084/
+ ▪ e2f4340ea cec: Fix breakage due to API change
+
+ ▪ project hardware/qcom/media-caf/apq8084/
+ ▪ 02e57500c videopp: fix include paths for lineage
+
+ [*] 08/05/2017
+  *******************    
+
+
+ ▪ project frameworks/base/
+ ▪ e4a2be662ee AIMROM:ADD COLOR ENGINE FROM PA
+ ▪ 09d9ad8c734 DozeService: Fallback to tilt sensor as pickup sensor
+
+ ▪ project packages/apps/Amify/
+ ▪ 74518f77f Launcher3: Support color engine
+ ▪ 9467d829f Launcher3: double tap on home screen to turn off screen
+ ▪ 8383db155 Launcher3: Add swipe up/down gestures
+
+ ▪ project packages/apps/CMParts/
+ ▪ f8ed153 Automatic translation import
+
+ ▪ project packages/apps/Dialer/
+ ▪ b9de4c289 Themes: InCallUI dialpad digits color
+ ▪ 153e42f7a Themes: Separate background color from text color
+
+ ▪ project packages/apps/freedomhub/
+ ▪ e92c4cfdf1 huehuehuehue :)
+ ▪ 003a5833bd Freedomhub: theme
+
+ ▪ project vendor/aim/
+ ▪ b8f984c6  sepolicy: Add Color Engine policy
+
+ [*] 08/04/2017
+  *******************    
+
+
+ ▪ project hardware/qcom/fm/
+ ▪ dcad703 Automatic translation import
+
+ ▪ project hardware/qcom/media-caf/msm8916/
+ ▪ ec789248f Merge remote-tracking branch 'caf/LA.BR.1.2.9_rb1.23' into cm-14.1-caf-8916
+
+ ▪ project hardware/qcom/media-caf/msm8994/
+ ▪ 1afe59f2c Merge remote-tracking branch 'caf/LA.BF64.1.2.3_rb1.15' into cm-14.1-caf-8994
+
+ ▪ project packages/apps/AudioFX/
+ ▪ 4081d14 Automatic translation import
+
+ ▪ project packages/apps/Bluetooth/
+ ▪ 37790769 Automatic translation import
+
+ ▪ project packages/apps/CMParts/
+ ▪ ca467d9 Regenerate contributors cloud
+
+ ▪ project packages/apps/Calendar/
+ ▪ 3feea520 Automatic translation import
+
+ ▪ project packages/apps/CellBroadcastReceiver/
+ ▪ 073c499 Automatic translation import
+
+ ▪ project packages/apps/DeskClock/
+ ▪ 33a443d5 Automatic translation import
+
+ ▪ project packages/apps/Eleven/
+ ▪ 153a2a1 Automatic translation import
+
+ ▪ project packages/apps/Email/
+ ▪ c44eaf097 Automatic translation import
+
+ ▪ project packages/apps/EmergencyInfo/
+ ▪ de00e09 Automatic translation import
+
+ ▪ project packages/apps/Gallery2/
+ ▪ ddd234194 Automatic translation import
+
+ ▪ project packages/apps/HTMLViewer/
+ ▪ ed791de Automatic translation import
+
+ ▪ project packages/apps/Jelly/
+ ▪ 03d8d55 Automatic translation import
+
+ ▪ project packages/apps/LockClock/
+ ▪ c6d8d03 Automatic translation import
+
+ ▪ project packages/apps/ManagedProvisioning/
+ ▪ 886e7cea Automatic translation import
+
+ ▪ project packages/apps/Messaging/
+ ▪ 76d63b3 Automatic translation import
+
+ ▪ project packages/apps/Snap/
+ ▪ e59578782 Automatic translation import
+
+ ▪ project packages/apps/Tag/
+ ▪ 25ee4c5 Automatic translation import
+
+ ▪ project packages/apps/TvSettings/
+ ▪ 213a2caa Automatic translation import
+
+ ▪ project packages/apps/UnifiedEmail/
+ ▪ a3b49c589 Automatic translation import
+
+ ▪ project packages/inputmethods/LatinIME/
+ ▪ cd62db3f9 Automatic translation import
+
+ ▪ project packages/providers/CalendarProvider/
+ ▪ 0bfe0b6 Automatic translation import
+
+ ▪ project packages/providers/DownloadProvider/
+ ▪ 581eab3 Automatic translation import
+
+ ▪ project packages/services/Telephony/
+ ▪ 074391ee Automatic translation import
+
+ ▪ project vendor/cmsdk/
+ ▪ 05c689d Automatic translation import
+
+ [*] 08/03/2017
+  *******************    
+
+
+ ▪ project frameworks/base/
+ ▪ 03a7bf2b701 Bring back Usercontentobserver for good
+
+ ▪ project packages/apps/Dialer/
+ ▪ a7ff33798 Dialer: Provide upgrade path for removed lookup providers
+
+ [*] 08/02/2017
+  *******************    
+
+
+ ▪ project frameworks/base/
+ ▪ 11cba71744d AOKP custom system animations (1/2)
+
+ ▪ project packages/apps/freedomhub/
+ ▪ 41e3034b69 AOKP custom system animations (2/2)
+
+---------------------------------------------------------
+
