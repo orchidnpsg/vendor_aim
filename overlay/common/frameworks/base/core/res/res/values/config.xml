@@ -76,7 +76,14 @@
          non-interactive state. -->
     <bool name="config_supportLongPressPowerWhenNonInteractive">true</bool>
 
- <!-- set default widget options to use googles clock -->
+ <!-- Deskclock -->
     <string name="widget_default_package_name">com.google.android.deskclock</string>
     <string name="widget_default_class_name">com.android.alarmclock.DigitalAppWidgetProvider</string>
+
+    <!-- Control the behavior when the user panic presses the back button.
+            0 - Nothing
+            1 - Go to home
+    -->
+    <integer name="config_backPanicBehavior">1</integer>
+
 </resources>

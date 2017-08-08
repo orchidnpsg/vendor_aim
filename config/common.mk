@@ -89,6 +89,11 @@ ifneq ($(TARGET_DISABLE_CMSDK), true)
 include vendor/aim/config/cmsdk_common.mk
 endif
 
+# TWRP
+ifeq ($(WITH_TWRP),true)
+include vendor/cm/config/twrp.mk
+endif
+
 # Bootanimation
 
 # Required CM packages
