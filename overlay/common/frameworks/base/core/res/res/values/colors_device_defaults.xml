@@ -2,7 +2,6 @@
 
 <!-- Copyright (C) 2017 AIM ROM
 <!-- Copyright (C) 2017 The Pure Nexus Project
->>>>>>> 6c24e2c... overlays: pixel theme
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -41,5 +40,4 @@
     <color name="accent_device_default_light">#ff4285f4</color>
     <color name="accent_device_default_dark">#ff5e97f6</color>
     <color name="accent_device_default_50">#ffe8f0fe</color>
->>>>>>> 6c24e2c... overlays: pixel theme
 </resources>
