@@ -227,16 +227,13 @@ PRODUCT_PACKAGES += \
 ifeq ($(WITH_SU),true)
 PRODUCT_PACKAGES += \
     su
-# Copy Lspeed
-PRODUCT_COPY_FILES += \
-    vendor/aim/prebuilt/app/LSpeed/LSpeed.apk:system/priv-app/LSpeed/LSpeed.apk
 endif
 endif
 
 DEVICE_PACKAGE_OVERLAYS += vendor/aim/overlay/common
 
 PRODUCT_VERSION_MAJOR = System-V2
-PRODUCT_VERSION_MINOR = 0
+PRODUCT_VERSION_MINOR = 5
 PRODUCT_VERSION_MAINTENANCE := 0
 
 ifeq ($(TARGET_VENDOR_SHOW_MAINTENANCE_VERSION),true)
