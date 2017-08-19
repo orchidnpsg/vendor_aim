@@ -5,8 +5,9 @@ PRODUCT_PACKAGES += \
     Amify \
     Turbo \
     AIMWIZARD \
-    OmniStyle
-    
+    OmniStyle \
+    SoundRecorder
+
 # Enable assistant by default
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opa.eligible_device=true
@@ -17,11 +18,6 @@ ifeq ($(WITH_MAGISK),true)
 PRODUCT_COPY_FILES += \
     vendor/aim/prebuilt/common/magisk.zip:system/addon.d/magisk.zip
 endif
-
-#ifeq ($(WITH_LSPEED),true)
-# Copy Lspeed
-   #vendor/aim/prebuilt/app/LSpeed/LSpeed.apk:system/priv-app/LSpeed/LSpeed.apk
-#endif
 
 # unlock sim globaly
 PRODUCT_PROPERTY_OVERRIDES += \
