@@ -27,6 +27,12 @@ PRODUCT_PACKAGES += \
     tune2fs
 
 
+# Themes
+ PRODUCT_PACKAGES += \
+     PixelTheme \
+     Stock
+
+
 # BOOT ANIMATION
 $(call inherit-product, vendor/aim/prebuilt/bootanimation/bootanimation.mk)
 
