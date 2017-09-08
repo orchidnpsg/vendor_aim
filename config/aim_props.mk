@@ -32,7 +32,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.storage_manager.enabled=true \
     ro.substratum.verified=true \
     persist.sys.recovery_update=false \
-    ro.com.google.ime.theme_id=5
+    ro.com.google.ime.theme_id=5 \
+    persist.sys.disable_rescue=true
 
 # Set cache location
 ifeq ($(BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE),)
