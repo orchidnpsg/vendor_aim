@@ -1,4 +1,4 @@
-# Copyright (C) 2016-2017 ParanoidAndroid Project
+# Copyright (C) 2016 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,11 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-SDCLANG ?= true
-SDCLANG_FORCED ?= false
+#AIM versioning
+AIM_BASE_VERSION = System-V3.0
 
-SDCLANG_PATH := vendor/qcom/sdclang-3.8/linux-x86/bin
+ifndef AIM_BUILD_TYPE
+    AIM_BUILD_TYPE := UNOFFICIAL
+endif
 
-SDCLANG_LTO_DEFS := vendor/aim/sdclang/sdllvm-lto-defs.mk
+# Set all versions
+AIM_VERSION := AIM-$(AIM_BASE_VERSION)-$(shell date -u +%Y%m%d)-$(AIM_BUILD_TYPE)-$(AIM_BUILD)
 
-SDCLANG_COMMON_FLAGS := -O3 -fvectorize-loops
+#overrides
+PRODUCT_PROPERTY_OVERRIDES += \
+    BUILD_DISPLAY_ID=$(BUILD_ID) \
+    ro.aim.version=$(AIM_VERSION) \
+    ro.mod.version=$(AIM_BASE_VERSION)-$(AIM_BUILD_TYPE)

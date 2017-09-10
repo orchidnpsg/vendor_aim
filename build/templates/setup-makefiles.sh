@@ -27,9 +27,9 @@ INITIAL_COPYRIGHT_YEAR=**** FILL IN COPYRIGHT YEAR ****
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-CM_ROOT="$MY_DIR"/../../..
+AIM_ROOT="$MY_DIR"/../../..
 
-HELPER="$CM_ROOT"/vendor/aim/build/tools/extract_utils.sh
+HELPER="$AIM_ROOT"/vendor/aim/build/tools/extract_utils.sh
 if [ ! -f "$HELPER" ]; then
     echo "Unable to find helper script at $HELPER"
     exit 1
@@ -37,12 +37,16 @@ fi
 . "$HELPER"
 
 # Initialize the helper
-setup_vendor "$DEVICE" "$VENDOR" "$CM_ROOT"
+setup_vendor "$DEVICE" "$VENDOR" "$AIM_ROOT"
 
 # Copyright headers and guards
 write_headers
 
 write_makefiles "$MY_DIR"/proprietary-files.txt
+
+cat << EOF >> "$ANDROIDMK"
+
+EOF
 
 # Finish
 write_footers
