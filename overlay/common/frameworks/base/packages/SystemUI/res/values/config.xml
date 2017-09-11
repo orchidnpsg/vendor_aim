@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
      Copyright (C) 2014 The CyanogenMod Project
-     Copyright (C) 2017 The AIM
+     Copyright (C) 2017 The AIMROM
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -34,5 +34,8 @@
     <!-- Temp at which to show a warning notification if config_showTemperatureWarning is true.
          If < 0, uses the value from HardwarePropertiesManager#getDeviceTemperatures. -->
     <integer name="config_warningTemperature">55</integer>
+
+    <!-- The duration in seconds to wait before the dismiss buttons are shown. -->
+    <integer name="recents_task_bar_dismiss_delay_seconds">0</integer>
 
 </resources>
