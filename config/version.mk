@@ -13,6 +13,9 @@
 # limitations under the License.
 
 #AIM versioning
+
+PRODUCT_BRAND ?= AIMROM
+
 AIM_BASE_VERSION = System-V3.0
 
 ifndef AIM_BUILD_TYPE

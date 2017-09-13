@@ -12,107 +12,42 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# include definitions for SDCLANG
-# include vendor/aim/sdclang/sdclang.mk
+PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
-include vendor/aim/config/version.mk
-
-PRODUCT_BRAND ?= AIMROM
-
-# Use signing keys for user builds
-ifeq ($(TARGET_BUILD_VARIANT),user)
-    PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/aim/.keys/release
+ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase=android-google
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.com.google.clientidbase=$(PRODUCT_GMS_CLIENTID_BASE)
 endif
 
-# Backup Tool
+PRODUCT_PROPERTY_OVERRIDES += \
+    keyguard.no_require_sim=true \
+    dalvik.vm.debug.alloc=0 \
+    ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
+    ro.url.legal.android_privacy=http://www.google.com/intl/%s/mobile/android/basic/privacy.html \
+    ro.error.receiver.system.apps=com.google.android.gms \
+    ro.setupwizard.enterprise_mode=1 \
+    ro.com.android.dataroaming=false \
+    ro.atrace.core.services=com.google.android.gms,com.google.android.gms.ui,com.google.android.gms.persistent \
+    ro.com.android.dateformat=MM-dd-yyyy \
+    ro.build.selinux=1
+
 PRODUCT_COPY_FILES += \
-    vendor/aim/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
-    vendor/aim/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
-    vendor/aim/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
+    vendor/aim/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
+    vendor/aim/prebuilt/common/bin/sysinit:system/bin/sysinit
 
-
-DEVICE_PACKAGE_OVERLAYS += \
-    vendor/aim/overlay/common \
-    vendor/aim/overlay/dictionaries
-
-# Custom AIM packages
-PRODUCT_PACKAGES += \
-    BluetoothExt \
-    Launcher3 \
-    LiveWallpapers \
-    LiveWallpapersPicker \
-    Stk
-
-# Extra tools
-PRODUCT_PACKAGES += \
-    e2fsck \
-    mke2fs \
-    tune2fs \
-    mount.exfat \
-    fsck.exfat \
-    mkfs.exfat \
-    mkfs.f2fs \
-    fsck.f2fs \
-    fibmap.f2fs \
-    mkfs.ntfs \
-    fsck.ntfs \
-    mount.ntfs \
-    7z \
-    bzip2 \
-    curl \
-    lib7z \
-    powertop \
-    pigz \
-    tinymix \
-    unrar \
-    unzip \
-    zip
-
-# Backup Services whitelist
-PRODUCT_COPY_FILES += \
-    vendor/aim/config/permissions/backup.xml:system/etc/sysconfig/backup.xml
-
-# For keyboard gesture typing
-PRODUCT_COPY_FILES += \
-    vendor/aim/prebuilt/common/lib64/libjni_latinimegoogle.so:system/lib64/libjni_latinime.so
-
-# init.d support
-PRODUCT_COPY_FILES += \
-    vendor/aim/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner
-
-# AIM-specific init file
+# Init file
 PRODUCT_COPY_FILES += \
     vendor/aim/prebuilt/common/etc/init.local.rc:root/init.aim.rc
 
-# Copy over added mimetype supported in libcore.net.MimeUtils
+# Don't export PS1 in /system/etc/mkshrc.
 PRODUCT_COPY_FILES += \
-    vendor/aim/prebuilt/common/lib/content-types.properties:system/lib/content-types.properties
+    vendor/aim/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
-# Enable SIP+VoIP on all targets
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
-
-# Enable wireless Xbox 360 controller support
-PRODUCT_COPY_FILES += \
-    frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_0719.kl
-    
-# Stagefright FFMPEG plugin
-PRODUCT_PACKAGES += \
-    libffmpeg_extractor \
-    libffmpeg_omx \
-    media_codecs_ffmpeg.xml
-
-# Needed by some RILs and for some gApps packages
-PRODUCT_PACKAGES += \
-    librsjni \
-    libprotobuf-cpp-full
-
-# Charger images
-PRODUCT_PACKAGES += \
-    charger_res_images
-
-# Recommend using the non debug dexpreopter
-USE_DEX2OAT_DEBUG ?= false
-
-#Aim extra for custom packages
+# Packages
 include vendor/aim/config/aim_extras.mk
+
+# Branding
+include vendor/aim/config/version.mk
