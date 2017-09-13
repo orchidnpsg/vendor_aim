@@ -35,16 +35,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
 PRODUCT_COPY_FILES += \
-    vendor/aim/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
-    vendor/aim/prebuilt/common/bin/sysinit:system/bin/sysinit
+    vendor/aim/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner
 
 # Init file
 PRODUCT_COPY_FILES += \
     vendor/aim/prebuilt/common/etc/init.local.rc:root/init.aim.rc
-
-# Don't export PS1 in /system/etc/mkshrc.
-PRODUCT_COPY_FILES += \
-    vendor/aim/prebuilt/common/etc/mkshrc:system/etc/mkshrc
 
 # Packages
 include vendor/aim/config/aim_extras.mk
