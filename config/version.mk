@@ -18,15 +18,25 @@ PRODUCT_BRAND ?= AIMROM
 
 AIM_BASE_VERSION = System-V3.0
 
-ifndef AIM_BUILD_TYPE
-    AIM_BUILD_TYPE := UNOFFICIAL
-endif
+#ifndef EXTENDED_BUILD_TYPE
+    AIM_BUILD_TYPE := ALPHA
+    PLATFORM_VERSION_CODENAME := ALPHA
+#endif
+
 
 # Set all versions
 AIM_VERSION := AIM-$(AIM_BASE_VERSION)-$(shell date -u +%Y%m%d)-$(AIM_BUILD_TYPE)-$(AIM_BUILD)
+
+AIM_DISPLAY_VERSION := $(AIM_VERSION)-$(AIM_BUILD_TYPE)
+
+AIM_MOD_VERSION := $(AIM_BASE_VERSION)-$(AIM_BUILD_TYPE)
 
 #overrides
 PRODUCT_PROPERTY_OVERRIDES += \
     BUILD_DISPLAY_ID=$(BUILD_ID) \
     ro.aim.version=$(AIM_VERSION) \
-    ro.mod.version=$(AIM_BASE_VERSION)-$(AIM_BUILD_TYPE)
+    ro.mod.version=$(AIM_MOD_VERSION)
+
+#Display version
+  PRODUCT_PROPERTY_OVERRIDES += \
+  ro.aim.display.version=$(AIM_DISPLAY_VERSION)
