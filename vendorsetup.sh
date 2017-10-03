@@ -14,3 +14,5 @@
 
 add_lunch_combo aim_Z010D-userdebug
 add_lunch_combo aim_Z010D-eng
+add_lunch_combo aim_lettuce-userdebug
+add_lunch_combo aim_tomato-userdebug
