@@ -46,3 +46,7 @@ include vendor/aim/config/aim_extras.mk
 
 # Branding
 include vendor/aim/config/version.mk
+
+DEVICE_PACKAGE_OVERLAYS += \
+    vendor/aim/overlay/common \
+    vendor/aim/overlay/dictionaries
