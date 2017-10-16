@@ -1,4 +1,4 @@
-# Copyright (C) 2016 The Pure Nexus Project
+g# Copyright (C) 2016 The Pure Nexus Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,8 +19,8 @@ PRODUCT_BRAND ?= AIMROM
 AIM_BASE_VERSION = System-V3.0
 
 #ifndef EXTENDED_BUILD_TYPE
-    AIM_BUILD_TYPE := ALPHA
-    PLATFORM_VERSION_CODENAME := ALPHA
+    AIM_BUILD_TYPE := BETA
+    PLATFORM_VERSION_CODENAME := BETA
 #endif
 
 
