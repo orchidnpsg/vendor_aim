@@ -10,9 +10,8 @@
 # distributed under the License is distributed on an "AS IS" BASIS,
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
-# limitations under the License.
+# limitations under the License
 
-add_lunch_combo aim_Z010D-userdebug
-add_lunch_combo aim_Z010D-eng
-add_lunch_combo aim_lettuce-userdebug
-add_lunch_combo aim_tomato-userdebug
+. "$(gettop)/vendor/aim/build/envsetup.sh"
+
+  aim_device_combos
