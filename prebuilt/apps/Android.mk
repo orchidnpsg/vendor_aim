@@ -12,32 +12,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Extra Packages For AimRom
-PRODUCT_PACKAGES += \
-    BluetoothExt \
-    Camera2 \
-    Gallery2 \
-    Launcher3 \
-    ViaBrowser \
-    Phonograph
+LOCAL_PATH:= $(call my-dir)
 
-# Extra tools
-PRODUCT_PACKAGES += \
-    openvpn \
-    e2fsck \
-    mke2fs \
-    tune2fs
+#ViaBrowser
+LOCAL_MODULE := ViaBrowser
+LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
 
-# Themes
- PRODUCT_PACKAGES += \
-     PixelTheme \
-     Stock
-
-
-# BOOT ANIMATION
-$(call inherit-product, vendor/aim/prebuilt/bootanimation/bootanimation.mk)
-
-# Fix Dialer
- PRODUCT_COPY_FILES +=  \
-     vendor/aim/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
-
+#Phonograph
+LOCAL_MODULE := Phonograph
+LOCAL_SRC_FILES := $(LOCAL_MODULE).apk
+LOCAL_MODULE_CLASS := APPS
+LOCAL_MODULE_TAGS := optional
+LOCAL_CERTIFICATE := PRESIGNED
+LOCAL_DEX_PREOPT := false
+include $(BUILD_PREBUILT)
