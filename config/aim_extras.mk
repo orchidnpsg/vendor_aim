@@ -15,11 +15,11 @@
 # Extra Packages For AimRom
 PRODUCT_PACKAGES += \
     BluetoothExt \
-    Camera2 \
     Gallery2 \
     Launcher3 \
     ViaBrowser \
-    Phonograph
+    Phonograph \
+    SnapdragonCamera
 
 # Extra tools
 PRODUCT_PACKAGES += \
