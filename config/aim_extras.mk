@@ -26,7 +26,16 @@ PRODUCT_PACKAGES += \
     openvpn \
     e2fsck \
     mke2fs \
-    tune2fs
+    tune2fs \
+    mount.exfat \
+    fsck.exfat \
+    mkfs.exfat \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs \
+    mkfs.ntfs \
+    fsck.ntfs \
+    mount.ntfs
 
 # Themes
  PRODUCT_PACKAGES += \
