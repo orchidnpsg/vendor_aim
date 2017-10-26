@@ -24,7 +24,7 @@
 WORKING_DIR=$( cd $( dirname $( readlink -f "${BASH_SOURCE[0]}" ) )/../../.. && pwd )
 
 # The tag you want to merge in goes here
-BRANCH=android-8.0.0_r11
+BRANCH=android-8.0.0_r24
 
 # Google source url
 REPO=https://android.googlesource.com/platform/
@@ -94,9 +94,9 @@ function force_sync() {
   echo "Repo Syncing........."
   sleep 10
   repo sync -c --force-sync >> /dev/null
-  repo forall -vc "git checkout o"
   if [ $? -eq 0 ]; then
     echo "Repo Sync success"
+  repo forall -vc "git checkout o"
   else
     echo "Repo Sync failure"
     exit 1
