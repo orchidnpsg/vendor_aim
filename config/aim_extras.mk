@@ -56,3 +56,9 @@ $(call inherit-product, vendor/aim/prebuilt/bootanimation/bootanimation.mk)
  PRODUCT_COPY_FILES +=  \
      vendor/aim/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
 
+# DU Utils Library
+PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
+PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
