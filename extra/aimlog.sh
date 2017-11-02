@@ -62,6 +62,14 @@ echo >> $Changelog;
 
 cd $source_tree
 
+# Generate changelog only if 'days_to_log' isn't empty, zero, or contain invalid characters
+# However, first, we need to unset it
+if [[ $days_to_log -le 0 ]];
+then
+unset days_to_log
+fi
+if [ ! -z $days_to_log ];
+then
 for i in $(seq $days_to_log);
 do
 export After_Date=`date --date="$i days ago" +%m/%d/%Y`
@@ -93,3 +101,4 @@ then
 fi
 
 echo -e ${grn}"\n AIM ROM Changelogs have been succesfully generated.\n"${txtrst}
+fi
