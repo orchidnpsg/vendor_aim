@@ -25,48 +25,39 @@ echo -e ${ylw}"\n\n ▼ Which root method do you want to use?\n"${txtrst}
 echo -e "";
 echo -e ${blu}" 〉 0 - Magisk "${txtrst}${red}"    ︱ Magisk Root Method"${txtrst}
 echo -e "";
-echo -e ${blu}" 〉 1 - Native SU"${txtrst}${red}"  ︱ LineageOS superuser binary[default]"${txtrst}
+echo -e ${blu}" 〉 1 - Native SU"${txtrst}${red}"  ︱ LineageOS superuser binary"${txtrst}
 echo -e "";
-echo -e ${blu}" )  2 - Rootless"${txtrst}${red}"   |  No root like stock rom or official LineageOS"${txtrst}
+echo -e ${blu}" 〉 2 - Rootless"${txtrst}${red}"   ︱  No root like stock rom or official LineageOS [default]"${txtrst}
 echo -e "";
 echo -e ${blu}" 🕑  10 seconds Time-out"${txtrst}${red}"︱ Default option"${txtrst}
 echo -e "";
 echo -e ${cya}" ▼ Pick a Method"${txtrst}
 echo -e "";
 $normal
-read -t 10 askvariant
+read -t 10 askvariant || askvariant=2
 sleep 1
 
-if [ "$askvariant" == "0" ];
-then
 echo -e "";
-echo -e ${blu}" ▪ WITH MAGISK ROOT METHOD! "${txtrst}
+if [ "$askvariant" -eq "0" ];
+then
+echo -e ${blu}" ▪ Magisk"${txtrst}
 export WITH_MAGISK="true";
-echo -e "";
-echo -e "";
 $normal
-sleep 1
-fi
-
-if [ "$askvariant" == "1" ];
+elif [ "$askvariant" -eq "1" ];
 then
-echo -e "";
-echo -e ${blu}" ▪ Native Su "${txtrst}
+echo -e ${blu}" ▪ Native SU "${txtrst}
 export WITH_SU="true";
-echo -e "";
-echo -e "";
 $normal
-sleep 1
-fi
-
-if [ "$askvariant" == "2" ];
+elif [ "$askvariant" -eq "2" ];
 then
-echo -e "";
-echo -e ${blu}" • Rootless "${txtrst}
-export WITH_MAGISK="false";
-export WITH_SU="false";
-echo -e "";
-echo -e "";
+echo -e ${blu}" ▪ Rootless "${txtrst}
+# nothing to do actually here, just unset 'WITH_MAGISK' and 'WITH_SU' if they were set
+unset WITH_MAGISK WITH_SU;
 $normal
-sleep 1
+else
+echo -e ${red}" ▪ Invalid or empty option specified! Falling back to previously set root method if any. "${txtrst}
+$normal
 fi
+echo -e "";
+echo -e "";
+sleep 1
