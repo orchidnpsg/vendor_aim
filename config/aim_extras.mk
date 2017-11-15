@@ -21,6 +21,11 @@ PRODUCT_PACKAGES += \
     ViaBrowser \
     Phonograph
 
+# AIM OTA
+PRODUCT_PACKAGES += \
+        AIMOTA \
+        libbypass
+
 # Extra tools
 PRODUCT_PACKAGES += \
     openvpn \
