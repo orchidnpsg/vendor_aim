@@ -59,4 +59,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Fix Dialer
 PRODUCT_COPY_FILES +=  \
-    vendor/aim/prebuilt/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
+    vendor/aim/prebuilt/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
+
+#Call special ringtones makefile
+include vendor/aim/config/common_audio.mk
