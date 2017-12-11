@@ -23,9 +23,11 @@ PRODUCT_PACKAGES += \
     Turbo
 
 # AIM OTA
+ifeq ($(AIM_BUILD_TYPE),OFFICIAL)
 PRODUCT_PACKAGES += \
         AIMOTA \
         libbypass
+endif
 
 # Extra tools
 PRODUCT_PACKAGES += \
