@@ -35,6 +35,12 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     qcom_flags += -DQCOM_BSP
     qcom_flags += -DQTI_BSP
 
+    ifeq ($(TARGET_USES_UM_PLATFORM),true)
+        UM_3_18_FAMILY += $(BR_FAMILY)
+        # Empty the BR_FAMILY variable so the platform doesn't match it
+        BR_FAMILY :=
+    endif
+
     BOARD_USES_ADRENO := true
 
     # UM platforms no longer need this set on O+
