@@ -45,8 +45,21 @@ PRODUCT_PACKAGES += \
 
 # Themes
  PRODUCT_PACKAGES += \
-     PixelTheme \
-     Stock
+    PixelTheme \
+    AuroraTheme \
+    DarkSpringGreenTheme \
+    FuschiaTheme \
+    GenesisTheme \
+    GreenGrassTheme \
+    KingPurpleTheme \
+    MagentaTheme \
+    MandarineTheme \
+    PaleBlueTheme \
+    SexyRedTheme \
+    SkyTheme \
+    SpotifyTheme \
+    WatermelonTheme \
+    Stock
 
 
 # BOOT ANIMATION
