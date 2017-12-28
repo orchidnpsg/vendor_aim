@@ -37,5 +37,9 @@
 
     <!-- The duration in seconds to wait before the dismiss buttons are shown. -->
     <integer name="recents_task_bar_dismiss_delay_seconds">0</integer>
+     
+     <!-- Disable top left/right statusbar and navbar icons padding -->
+     <dimen name="nav_content_padding">0dp</dimen>
+     <dimen name="rounded_corner_content_padding">0dp</dimen>
 
 </resources>
