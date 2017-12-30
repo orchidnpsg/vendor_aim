@@ -52,6 +52,10 @@ PRODUCT_PACKAGES += \
 # BOOT ANIMATION
 $(call inherit-product, vendor/aim/prebuilt/bootanimation/bootanimation.mk)
 
+# Set Pixel blue light theme on Gboard
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.com.google.ime.theme_id=5
+
 # Fix Dialer
  PRODUCT_COPY_FILES +=  \
      vendor/aim/prebuilt/common/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml
