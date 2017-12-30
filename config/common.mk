@@ -50,3 +50,7 @@ include vendor/aim/config/version.mk
 DEVICE_PACKAGE_OVERLAYS += \
     vendor/aim/overlay/common \
     vendor/aim/overlay/dictionaries
+
+# Fix Dialer
+PRODUCT_COPY_FILES +=  \
+    vendor/aim/prebuilt/etc/sysconfig/dialer_experience.xml:system/etc/sysconfig/dialer_experience.xml 
