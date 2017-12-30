@@ -37,6 +37,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     vendor/aim/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner
 
+# Backup Tool
+PRODUCT_COPY_FILES += \
+    vendor/aim/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
+    vendor/aim/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
+    vendor/aim/prebuilt/common/bin/50-base.sh:system/addon.d/50-base.sh \
+
 # Init file
 PRODUCT_COPY_FILES += \
     vendor/aim/prebuilt/common/etc/init.local.rc:root/init.aim.rc
