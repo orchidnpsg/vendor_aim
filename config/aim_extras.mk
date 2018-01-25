@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     ViaBrowser \
     Phonograph \
-    Turbo
+    Turbo \
+    AIMWalls
 
 # AIM OTA
 PRODUCT_PACKAGES += \
