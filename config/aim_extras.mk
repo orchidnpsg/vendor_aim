@@ -49,6 +49,7 @@ PRODUCT_PACKAGES += \
     PixelTheme \
     AuroraTheme \
     DarkSpringGreenTheme \
+    FootprintBlue \
     FuschiaTheme \
     GenesisTheme \
     GreenGrassTheme \
