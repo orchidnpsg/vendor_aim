@@ -65,6 +65,10 @@ PRODUCT_PACKAGES += \
     WatermelonTheme \
     Stock
 
+# Fonts
+ PRODUCT_PACKAGES += \
+     AimFonts
+
 # Extra Stuff from Omni/DU/Whatever
 PRODUCT_PACKAGES += \
     OmniStyle \
