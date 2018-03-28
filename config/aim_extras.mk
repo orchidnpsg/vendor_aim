@@ -63,6 +63,10 @@ PRODUCT_PACKAGES += \
     WatermelonTheme \
     Stock
 
+# Extra Stuff from Omni/DU/Whatever
+PRODUCT_PACKAGES += \
+    OmniStyle \
+    OmniJaws
 
 # BOOT ANIMATION
 $(call inherit-product, vendor/aim/prebuilt/bootanimation/bootanimation.mk)
