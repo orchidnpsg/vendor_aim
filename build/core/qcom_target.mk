@@ -31,16 +31,6 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     UM_3_18_FAMILY := msm8937 msm8953 msm8996
     UM_4_4_FAMILY := msm8998 sdm660
 
-    qcom_flags := -DQCOM_HARDWARE
-    qcom_flags += -DQCOM_BSP
-    qcom_flags += -DQTI_BSP
-
-    ifeq ($(TARGET_USES_UM_PLATFORM),true)
-        UM_3_18_FAMILY += $(BR_FAMILY)
-        # Empty the BR_FAMILY variable so the platform doesn't match it
-        BR_FAMILY :=
-    endif
-
     BOARD_USES_ADRENO := true
 
     # UM platforms no longer need this set on O+
@@ -52,22 +42,15 @@ ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
     TARGET_COMPILE_WITH_MSM_KERNEL := true
 
     ifneq ($(filter msm7x27a msm7x30 msm8660 msm8960,$(TARGET_BOARD_PLATFORM)),)
-        # Enable legacy graphics functions
-        qcom_flags += -DQCOM_BSP_LEGACY
+        TARGET_USES_QCOM_BSP_LEGACY := true
         # Enable legacy audio functions
         ifeq ($(BOARD_USES_LEGACY_ALSA_AUDIO),true)
             USE_CUSTOM_AUDIO_POLICY := 1
-            qcom_flags += -DLEGACY_ALSA_AUDIO
         endif
     endif
 
     # Allow building audio encoders
     TARGET_USES_QCOM_MM_AUDIO := true
-
-    # Enable extra offloading for post-805 targets
-    ifneq ($(filter msm8992 msm8994,$(TARGET_BOARD_PLATFORM)),)
-        qcom_flags += -DHAS_EXTRA_FLAC_METADATA
-    endif
 
     # Enable color metadata for modern UM targets
     ifneq ($(filter msm8996 msm8998 sdm660,$(TARGET_BOARD_PLATFORM)),)
@@ -137,3 +120,4 @@ $(call wlan-set-path-variant,wlan)
 $(call bt-vendor-set-path-variant,bt)
 
 endif
+
