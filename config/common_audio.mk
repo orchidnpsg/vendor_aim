@@ -24,8 +24,7 @@ PRODUCT_COPY_FILES += \
     $(RINGTONE_PATH)/Caraway.ogg:system/media/audio/ringtones/Caraway.ogg \
     $(RINGTONE_PATH)/Frost.ogg:system/media/audio/ringtones/Frost.ogg \
     $(RINGTONE_PATH)/Myst.ogg:system/media/audio/ringtones/Myst.ogg
-    
-    
+
 # Default notification/alarm sounds
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Electra.ogg \

@@ -22,7 +22,6 @@ ifndef AIM_BUILD_TYPE
     AIM_BUILD_TYPE := UNOFFICIAL
 endif
 
-
 # Set all versions
 AIM_VERSION := AIM-$(AIM_BASE_VERSION)-$(shell date -u +%Y%m%d)-$(AIM_BUILD_TYPE)-$(AIM_BUILD)
 

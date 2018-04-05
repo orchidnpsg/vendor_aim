@@ -17,7 +17,7 @@ PRODUCT_PACKAGES += \
     BluetoothExt \
     Camera2 \
     Gallery2 \
-    Launcher3 \
+    RuthlessPixelLauncher \
     ViaBrowser \
     Phonograph \
     Turbo \
