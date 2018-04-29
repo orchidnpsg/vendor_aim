@@ -65,7 +65,7 @@ PRODUCT_PACKAGES += \
 # DarkUI Packages
  PRODUCT_PACKAGES += \
      SettingsDarkThemeOverlay \
-     SystemDarkThemesOverlay
+     SystemDarkThemeOverlay
 
 
 # BOOT ANIMATION
