@@ -67,6 +67,7 @@ PRODUCT_PACKAGES += \
  PRODUCT_PACKAGES += \
      SettingsDarkThemeOverlay \
      SystemDarkThemeOverlay \
+     SystemSettingsIconTintOverlay \
      SysuiQsDarkThemeOverlay \
      GBoardDarkTheme
 
