@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += \
      PinkTheme \
      PixelBaseTheme \
      StockBaseTheme \
-     StockBaseFixedTheme
+     StockFixedBaseTheme
 
 # DarkUI Packages
  PRODUCT_PACKAGES += \
@@ -70,7 +70,9 @@ PRODUCT_PACKAGES += \
      SystemDarkThemeOverlay \
      SystemSettingsIconTintOverlay \
      SysuiQsDarkThemeOverlay \
-     GBoardDarkTheme
+     GBoardDarkTheme \
+     SettingsBlackThemeOverlay \
+     SystemBlackThemeOverlay
 
 
 # BOOT ANIMATION
