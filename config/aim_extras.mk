@@ -46,25 +46,6 @@ PRODUCT_PACKAGES += \
     fsck.ntfs \
     mount.ntfs
 
-# Themes
- PRODUCT_PACKAGES += \
-    PixelTheme \
-    AuroraTheme \
-    DarkSpringGreenTheme \
-    FootprintBlue \
-    FuschiaTheme \
-    GenesisTheme \
-    GreenGrassTheme \
-    KingPurpleTheme \
-    MagentaTheme \
-    MandarineTheme \
-    PaleBlueTheme \
-    SexyRedTheme \
-    SkyTheme \
-    SpotifyTheme \
-    WatermelonTheme \
-    Stock
-
 # Fonts
  PRODUCT_PACKAGES += \
      AimFonts
