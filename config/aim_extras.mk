@@ -55,6 +55,12 @@ PRODUCT_PACKAGES += \
     OmniStyle \
     OmniJaws
 
+PRODUCT_PACKAGES += \
+     PixelTheme \
+     StockTheme \
+     PixelBaseTheme \
+     StockBaseTheme
+
 # BOOT ANIMATION
 $(call inherit-product, vendor/aim/prebuilt/bootanimation/bootanimation.mk)
 
