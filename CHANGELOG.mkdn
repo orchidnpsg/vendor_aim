@@ -1,0 +1,951 @@
+
+# AIMROM Oreo Version 3.3 Changelog
+====================================================
+
+06-07-2018
+============
+
+#### bionic/
+* 878eb3f Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/bionic into o8.1
+
+#### bootable/recovery/
+* 60bf513 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/bootable/recovery into o8.1
+
+#### build/make/
+* 18e2625 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/build into o8.1
+* c1749bf Merge tag 'android-8.1.0_r29' of https://android.googlesource.com/platform/build into o8.1
+
+#### development/
+* adb69bc Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/development into o8.1
+
+#### external/wpa_supplicant_8/
+* a6b0834 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/external/wpa_supplicant_8 into o8.1
+
+#### frameworks/av/
+* 219200e Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/frameworks/av into o8.1
+
+#### frameworks/base/
+* c0b89ee Change Metics Constants values
+* 4ce7b37 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/frameworks/base into o8.1
+* fd4526f Fix black theme
+* ffe3cde Systemui Roundcorners:Make it 0 coz we have radious selector
+* 5fb4bec Add support for theming notifications
+* 513e006 base: Allow using framework values for rounded corners [1/2]
+* 8627a5e base: Add black themes (1/3)
+* 38e84ed Theme overlays , we moved to vendor
+* 60a26da Add Gboard overlay [2/2]
+* 81bd25c [2/3] NetworkManagement : Add ability to restrict app data/wifi usage
+* fad85da Fix another potential ChooserActivity related System FC
+* ee9ed8b Fix notification transact fail problem
+* 13de751 Prevent data usage dialog from being displayed again
+* 175cd21 NavbarTuner: Fix NPE
+* 49f07c0 [PackageManagerService]: Fixes can not boot issue.
+* cbb75ca base: Add setting to toggle icon tint in settings [1/3]
+* d6f0e4d Disable fine-grained logging
+* 88fe611 Brightness Buttons: Improve touch area
+* 7429f4e Brightness slider: Vibrate after a long press
+* da1f191 QSContainerImpl: Toggle Dark QS Panel based on color
+* 0033b11 Use async thread for performPoll in NetworkStats
+* 795bc56 AtomicFile: Rename the backup file to base file when backup exists
+* 101ea1e Fix issue when start android/com.android.internal.backup.LocalTransportService
+* 49ae386 PackageManager: Init known locales at WelcomeActivity in SetupWizard
+* b721900 Settings: Add Rounded corner strings to Settings.Secure
+* 22d1934 RoundedCorners: Use even if resource values are 0
+
+#### frameworks/native/
+* a3b7446 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/frameworks/native into o8.1
+
+#### frameworks/opt/telephony/
+* ec9b832 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/frameworks/opt/telephony into o8.1
+
+#### hardware/interfaces/
+* 53a183e Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/hardware/interfaces into o8.1
+* 2313bed Merge tag 'android-8.1.0_r31' of https://android.googlesource.com/platform/hardware/interfaces into o8.1
+* 58183e3 Merge tag 'android-8.1.0_r30' of https://android.googlesource.com/platform/hardware/interfaces into o8.1
+* 374c8b6 Merge tag 'android-8.1.0_r27' of https://android.googlesource.com/platform/hardware/interfaces into o8.1
+* 5ba88cc Merge tag 'android-8.1.0_r23' of https://android.googlesource.com/platform/hardware/interfaces into o8.1
+* 3aa13ad Merge tag 'android-8.1.0_r20' of https://android.googlesource.com/platform/hardware/interfaces into o8.1
+* f3ec3fe Merge tag 'android-8.1.0_r17' of https://android.googlesource.com/platform/hardware/interfaces into o8.1
+* c6efc14 Merge tag 'android-8.1.0_r15' of https://android.googlesource.com/platform/hardware/interfaces into o8.1
+
+#### hardware/ril/
+* ab3d54d Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/hardware/ril into o8.1
+
+#### manifest/
+* 52cc7f3 Merge pull request #8 from chirayu19091997/patch-1
+* efee3dc Track Sepolicy New branch
+* 9b303d8 Merge june patch android-8.1.0_r33
+
+#### packages/apps/Bluetooth/
+* 559b29a Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/packages/apps/Bluetooth into o8.1
+
+#### packages/apps/DeskClock/
+* 4f3804c Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/packages/apps/DeskClock into o8.1
+
+#### packages/apps/Gallery2/
+* 476eb17 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/packages/apps/Gallery2 into o8.1
+
+#### packages/apps/PackageInstaller/
+* b54c190 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/packages/apps/PackageInstaller into o8.1
+
+#### packages/apps/Settings/
+* 6bc34f2 [1/3] Settings: per-app cellular data and wifi restrictions
+* 1652162 Hide signal strength when told by carrier
+* 0dd4768 settings: display: Disable AOSP ThemePreferenceController
+* 6acfc29 Fix memory leak of DataSaverPreference
+* 95530b1 Fix always-on VPN sync problem
+
+#### packages/apps/freedomhub/
+* 9b39784 ObjValue = newValue
+* 67d6d60 Revert "Add ListPreference helpers backed by Settings"
+* 9cbdf4a wedges: Allow using framework values for rounded corners [2/2]
+* b64db38 wedges: themes: Support settings icon tinting for black theme too
+* dc27d20 Add Black theme [3/3]
+* 6149d03 wedges: Add themes warning
+* 91e47e9 wedges: Add setting to toggle icon tint in settings [3/3]
+* b9542db QS: Make color picker pref depend on WP color toggle
+* b34dbae Add ListPreference helpers backed by Settings
+* 0f10e23 Fix path derp
+* 356bdea Introduce a category preference
+* 9751242 qs: Allow theming QS with wallpaper colors [2/2]
+* 6f1ddb6 QS: Set Colors [2/2]
+* 0ed811c Quick settings panel : Set transparency [2/2]
+* 6129955 Settings: Add Runtime Rounded Corner preferences
+* d12c37c [2/2] Wedges: configure System theme
+* 5ae26a9 Move Themes to freedomhub [2/2]
+
+#### packages/inputmethods/LatinIME/
+* 4344e43 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/packages/inputmethods/LatinIME into o8.1
+
+#### packages/providers/MediaProvider/
+* 296515f Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/packages/providers/MediaProvider into o8.1
+
+#### packages/providers/TelephonyProvider/
+* 87d9127 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/packages/providers/TelephonyProvider into o8.1
+
+#### packages/services/Telephony/
+* c53c5bb Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/packages/services/Telephony into o8.1
+
+#### system/bt/
+* 77171a9 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/system/bt into o8.1
+
+#### system/core/
+* dba5d7b Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/system/core into o8.1
+
+#### system/extras/
+* 19c41c3 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/system/extras into o8.1
+
+#### system/libhidl/
+* 576b4d3 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/system/libhidl into o8.1
+
+#### system/media/
+* 7a52e19 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/system/media into o8.1
+
+#### system/nfc/
+* 1b79c6b Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/system/nfc into o8.1
+
+#### system/vold/
+* 9688927 Merge tag 'android-8.1.0_r33' of https://android.googlesource.com/platform/system/vold into o8.1
+
+#### vendor/aim/
+* 29f3a91 vendor_AIM: Add Github changelog generator
+* 8398a8a Time for AIM-V3.3
+* ac5d33c vendor: Fix inclusion of overlay packages
+* 2570855 vendor: Add black themes (2/3)
+* c92c72e vendor: AIM: Move common overlays into a new directory
+* 2d693d7 vendor: AIM: Reorganise overlay packages
+* cc686b1 Add pink accent overlay
+* 39f72a3 vendor: Add setting to toggle icon tint in settings [2/3]
+* ca5f36b Theme dark notifications
+* 2ad8376 Theme autofill save dialog text color
+* c1ac319 Theme uninstall dialog
+* 1c79ff2 Theme Settings shortcuts background
+* 55b9e61 vendor: Fix WiFi icon colors
+* 1e25563 Theme screen pinning dialog background and text color
+* dc675a1 Theme immersive cling
+* 4f2c6a7 Fix dark theme on the activity picker
+* 9cacf51 Add Gboard overlay [1/2]
+* 1027c05 vendor: Fix colors on the stock base overlay
+* 2d79ec3 DarkUI: Separate out QS overlay again
+* a30b392 Theme suggestions card summary text
+* 1d51b41 Theme safe boot dialog
+* 2c7e062 Fix brightness slider under Settings/Display
+* 181242d Theme Moar dialogs
+* 7fa7970 DarkUI: Fix colors on some dialogs
+* 7e8d96e packages: Derp
+* b553b2e BUild themes
+* 5834b70 packages: Cleanup some remains after refactor
+* 3ca5fcb DarkUI: Improvements
+* 72ced4c overlays: Overlay Settings for Dark UI
+* fc5b48f base: overlays: Refactor sysui overlay to system [1/2]
+* c6a9878 SysuiDarkThemeOverlay: Initial Dark UI changes [1/2]
+* 9053a83 Add Basic theme for now
+* 0d17502 Nuke these themes
+
+06-06-2018
+============
+
+#### device/asus/zenfone3/
+* d7c135a Revert "zenfone3: Add modem build date assertion"
+* fcfbf57 Fun
+
+06-04-2018
+============
+
+#### device/aim/sepolicy/
+* 99dac9e common: Add sf_lcd_density_prop type and labelled props
+* 5ef77b6 sepolicy: Adapt for Aimrom Signed-off-by: Anand Ramachandran <anand.nv1998@gmail.com>
+* 734f5bd Remove Pocket Judge(3/3)
+* f64dda3 sepolicy: Improve external storage rules
+* d9eaee5 sepolicy: common: Add a label for /data/aosip_updates
+* c3a81f7 common: Label sdfat as vfat
+* 3a5d993 sepolicy: Cleanup context labelling for external sdcards
+* 167facc sepolicy: qcom: Fixing camera app not launching
+* 12bfd17 sepolicy: suppress denial logspam
+* 5ce8cf6 Add pocket judge selinux policy
+* 6088204 sepolicy: Move exfat, ntfs and fuseblk types to system/sepolicy
+* c5f586f qcom: Allow fsck to check /persist
+* 53bad41 sepolicy: allow vold to mount fuse-based sdcard
+* 453d0f9 sepolicy: Allow vold to `getattr` on mkfs_exec
+* 27daa45 sepolicy: fix denials for external storage
+* 972a4e4 sepolicy: treat fuseblk as sdcard_external
+* a2917bb sepolicy: label exfat and ntfs mkfs executables
+* 9a1b65d sepolicy: Add domain for mkfs binaries
+* 65d2644 sepolicy: Set the context for fsck.exfat/ntfs to fsck_exec
+* de1801c sepolicy: Fix sysinit denials
+* 2d2ffe8 sepolicy: Permissions for userinit
+* 366823e sepolicy: allow userinit to set its property
+* 149b277 sepolicy: Add policy for sysinit
+* 65db2e9 sepolicy: qcom: add persist_block_device type
+* 3d2ddea sepolicy: Allow apps to read battery status
+* 519ce00 sepolicy: Move fingerprint 2.0 service out of private sepolicy
+* 795b3da sepolicy: common: add rules for AOSiP vibrator hal
+* ca6cf10 sepolicy: Move AOSiP policy to platform
+* 859832f Allow zygote to create cgroups files
+* 87a3f3b sepolicy: Use custom ADB over network property
+* afa9dd8 sepolicy: Fix permissions for service.adb.tcp.port
+* a6bcb2a qcom: sepolicy: Add sepolicy for hidl power hal
+* 3f320f0 sepolicy: Include platform specific sepolicy
+* c7b6905 sepolicy: Allow SystemServer to set service.adb.tcp.* properties
+* 6545bae sepolicy: Allow platform app to find nfc service
+* 8651a14 sepolicy: Update fingerprint-2.0 service path
+* 1a9fa1c sepolicy: common: Add a label for fingerprint 2.0 -> 2.1 service
+* a35d14e sepolicy: Initial repo structure
+
+#### frameworks/base/
+* 2f74c02e PackageManager: Avoid null access
+* e846776 Fix CDMA Range Checks for SignalStrength
+* 9bc7981 Defer deleting a http cache
+* 86ca166 Make it possible to hide signal strength via Carrier Config
+* 5b30576 SystemUI: Allow theming QS with wallpaper colors [1/2]
+* d66a469 QS: Set Colors [1/2]
+* eef1cd8 Quick settings panel : Set transparency [1/2]
+* f755396 Fix Gapps permissions
+* 202668e National roaming info for new Tuenti MNC in Spain
+* 8f4104f Add MVNO info for tele2 in croatia
+* 9f04927 Don't show roaming icon when connecting HT HR network with Tele2 SIM
+
+#### packages/apps/Settings/
+* 5b499f3 Move themes to Freedomhub [1/2]
+
+#### packages/apps/freedomhub/
+* 1a7d5b3 Bring up Aimrom themes [2/2]
+
+06-03-2018
+============
+
+#### frameworks/base/
+* 12e4643 Add an option to force pre-O apps to use full screen aspect ratio
+* 9e75c42 Volte flag: smaller string
+* 16db2fa Append VoLTE status in the carrier name
+* 4ffa05f mountservice: Shut down volumes before restarting framework
+* 4b79745 Show 3G data icon for TD-SCDMA network type
+* 9d68efb Don't consume all BACK keys in SearchView
+* e958c64 AudioService: synchronize access to user selected volume ctrl stream
+* 8589633 Bluetooth: Don't remove UUIDs if profile in connected state
+* 311f183 Should show the lock task mode toast if can not launch the activity not in the locked task.
+* f2b6e83 AsyncTask: Fix to remove canceled tasks from executor's queue
+* 5bb5db5 Fix a null pointer exception in FragmentManager
+* 64f6ab8 Remove duplicate code for binder ID clear and restore
+* 822762d Synchronize the HeadsetService methods
+* 78b53e1 ActivityStack: Add task null checker before proceeding
+* 407c2eb Accessibility: Fix FWR when unlinkToDeath if linkToDeath failed
+* dd61be1 ActivityManager: Change way to get Available memory
+* a8a472e core: Improve AtomicFile implementation
+* fc500b7 Using BIND_ALLOW_OOM_MANAGEMENT flag for avoid memory pressure when system binding
+* 4c9afea Avoid dangerous recursive call on startProcessLocked
+* 90b0316 Add permission whitelist for EmergencyInfo app
+* 89de6a9 hwui: check the buffer status before draw
+* 21937db Send broadcast to MediaScannerReceiver to refresh gallery
+* 7d309f1 SystemUI: add navbar button layout inversion tuning
+* 92aa05f media/jni: Check mute state before starting play
+* 4425ff6 Keyguard: Allow disabling fingerprint wake-and-unlock
+* 9058069 SystemUI: Dismiss keyguard on boot if disabled by current profile
+* 9a2241a TelephonyManager: Prevent NPE when registering phone state listener
+* 942c6f5 frameworks: Fix mLteSignalStrength range check
+* 32076d2 frameworks: Fixed signal strength issue
+
+06-02-2018
+============
+
+#### kernel/asus/msm8953/
+* 66239dc drivers: prima: Update to CAF Tag LA.UM.6.6.r1-08600-89xx.0
+* 308fbf2 Merge tag 'LA.UM.6.6.r1-08600-89xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into lineage-15.1
+
+06-01-2018
+============
+
+#### device/asus/zenfone3/
+* c64cb60 zenfone3: configs: Restore VIRTUAL flags of focal-touchscreen keylayout
+
+#### kernel/asus/msm8953/
+* 3b516a0 Merge tag 'v3.18.112' of https://kernel.googlesource.com/pub/scm/linux/kernel/git/stable/linux-stable into lineage-15.1
+
+05-31-2018
+============
+
+#### device/asus/zenfone3/
+* 025bb7a zenfone3: sepolicy: Allow system_server to write to sysfs_gesture_device
+* 417f513 zenfone3: configs: Remove VIRTUAL flags from focal-touchscreen keylayout
+
+#### kernel/asus/msm8953/
+* b0b357c Linux 3.18.112
+* f451da6 Revert "vti4: Don't override MTU passed on link creation via IFLA_MTU"
+
+05-30-2018
+============
+
+#### kernel/asus/msm8953/
+* 8eb1ef0 Linux 3.18.111
+* 96239f4 kdb: make "mdr" command repeat
+* 4543d30 regulator: of: Add a missing 'of_node_put()' in an error handling path of 'of_regulator_match()'
+* 2c57160 scsi: lpfc: Fix frequency of Release WQE CQEs
+* 093feb2 scsi: lpfc: Fix soft lockup in lpfc worker thread during LIP testing
+* 26faa84 scsi: lpfc: Fix issue_lip if link is disabled
+* 90059d0 netlabel: If PF_INET6, check sk_buff ip header version
+* ba0c7ae audit: return on memory error to avoid null pointer dereference
+* 11d549e clk: samsung: exynos3250: Fix PLL rates
+* f114cce clk: samsung: exynos5250: Fix PLL rates
+* a5314e0 clk: samsung: exynos5260: Fix PLL rates
+* 5317222 clk: samsung: s3c2410: Fix PLL rates
+* 225f6c4 media: cx25821: prevent out-of-bounds read on array card
+* e997393 udf: Provide saner default for invalid uid / gid
+* 5771618 PCI: Add function 1 DMA alias quirk for Marvell 88SE9220
+* 8bdc529 serial: arc_uart: Fix out-of-bounds access through DT alias
+* e70f6af serial: fsl_lpuart: Fix out-of-bounds access through DT alias
+* 3f7945c serial: imx: Fix out-of-bounds access through serial port index
+* 580bcda serial: samsung: Fix out-of-bounds access through serial port index
+* 8984c74 serial: xuartps: Fix out-of-bounds access through DT alias
+* 75d852e rtc: tx4939: avoid unintended sign extension on a 24 bit shift
+* 3c31faa staging: rtl8192u: return -ENOMEM on failed allocation of priv->oldaddr
+* 9215e5a media: em28xx: USB bulk packet size fix
+* f8c61fe dmaengine: pl330: fix a race condition in case of threaded irqs
+* 0256494 media: s3c-camif: fix out-of-bounds array access
+* fdf0b92 media: cx23885: Set subdev host data to clk_freq pointer
+* 681e8cc media: cx23885: Override 888 ImpactVCBe crystal frequency
+* a5f46bb ALSA: vmaster: Propagate slave error
+* 40c1020 usb: gadget: composite: fix incorrect handling of OS desc requests
+* 10bedea usb: gadget: udc: change comparison to bitshift when dealing with a mask
+* 0fdfc3f cdrom: do not call check_disk_change() inside cdrom_open()
+* 67fa456 hwmon: (pmbus/adm1275) Accept negative page register values
+* 68f70a8 hwmon: (pmbus/max8688) Accept negative page register values
+* 92a1e6a perf/core: Fix perf_output_read_group()
+* e1acc9f powerpc: Add missing prototype for arch_irq_work_raise()
+* a7289f6 usb: gadget: ffs: Let setup() return USB_GADGET_DELAYED_STATUS
+* 6858abe usb: dwc2: Fix interval type issue
+* d36edd4 PCI: Restore config space on runtime resume despite being unbound
+* a1ff9f1 MIPS: ath79: Fix AR724X_PLL_REG_PCIE_CONFIG offset
+* 7b98944 xhci: zero usb device slot_id member when disabling and freeing a xhci slot
+* 87f5b4f i2c: mv64xxx: Apply errata delay only in standard mode
+* c814922 ACPICA: acpi: acpica: fix acpi operand cache leak in nseval.c
+* 43f9785 ACPICA: Events: add a return on failure from acpi_hw_register_read
+* 7afa3b1 bcache: quit dc->writeback_thread when BCACHE_DEV_DETACHING is set
+* b895aea zorro: Set up z->dev.dma_mask for the DMA API
+* f60da70 usb: dwc3: Update DWC_usb31 GTXFIFOSIZ reg fields
+* c688b28 arm: dts: socfpga: fix GIC PPI warning
+* bc3c404 virtio-net: Fix operstate for virtio when no VIRTIO_NET_F_STATUS
+* 477c193 ima: Fallback to the builtin hash algorithm
+* 00cef02 ath10k: Fix kernel panic while using worker (ath10k_sta_rc_update_wk)
+* ff98be4 net/mlx5: Protect from command bit overflow
+* adef5f7 tools/thermal: tmon: fix for segfault
+* 6759440 powerpc/perf: Fix kernel address leak via sampling registers
+* 9d2d68f2 powerpc/perf: Prevent kernel address leak to userspace via BHRB buffer
+* 6631ce1 hwmon: (nct6775) Fix writing pwmX_mode
+* 8482ee5 parisc/pci: Switch LBA PCI bus from Hard Fail to Soft Fail mode
+* 2231cc4 m68k: set dma and coherent masks for platform FEC ethernets
+* 1699271 powerpc/mpic: Check if cpu_possible() in mpic_physmask()
+* c893df8 ACPI: acpi_pad: Fix memory leak in power saving threads
+* 6ba5432 xen/acpi: off by one in read_acpi_id()
+* 84901fa btrfs: fix lockdep splat in btrfs_alloc_subvolume_writers
+* 0ad62f3 Btrfs: fix copy_items() return value when logging an inode
+* 860f7a0 btrfs: tests/qgroup: Fix wrong tree backref level
+* bcc3631 sparc64: Make atomic_xchg() an inline function rather than a macro.
+* 3f2e615 KVM: VMX: raise internal error for exception during invalid protected mode state
+* e42acd5 sched/rt: Fix rq->clock_update_flags < RQCF_ACT_SKIP warning
+* a0270cd btrfs: Fix possible softlock on single core machines
+* 7253c77 Btrfs: fix NULL pointer dereference in log_dir_items
+* b56cd693 Btrfs: bail out on error during replay_dir_deletes
+* 1d79b1d mm: fix races between address_space dereference and free in page_evicatable
+* 824c819 mm/ksm: fix interaction with THP
+* 4d6ceac dp83640: Ensure against premature access to PHY registers after reset
+* dd38f46 scsi: aacraid: Insure command thread is not recursively stopped
+* 0fb0e25 Force log to disk before reading the AGF during a fstrim
+* ab01cff sr: get/drop reference to device in revalidate and check_events
+* c8199e3 swap: divide-by-zero when zero length swap file on ssd
+* b4b8334 fs/proc/proc_sysctl.c: fix potential page fault while unregistering sysctl table
+* af794b7 sh: fix debug trap failure to process signals before return to user
+* 8035424 net: mvneta: fix enable of all initialized RXQs
+* dbbe95b net: Fix untag for vlan packets without ethernet header
+* 65bdc34 llc: properly handle dev_queue_xmit() return value
+* e42c5cc net-usb: add qmi_wwan if on lte modem wistron neweb d18q1
+* 4582e6d net: qmi_wwan: add BroadMobi BM806U 2020:2033
+* d6d9306 batman-adv: fix packet loss for broadcasted DHCP packets to a server
+* d0fb1d2 batman-adv: fix multicast-via-unicast transmission with AP isolation
+* b850675 selftests: ftrace: Add a testcase for probepoint
+* 053a459 selftests: ftrace: Add a testcase for string type with kprobe_event
+* 1f8c76a selftests: ftrace: Add probe event argument syntax testcase
+* 36f5b18 mm/mempolicy.c: avoid use uninitialized preferred_node
+* 08a049c vti4: Don't override MTU passed on link creation via IFLA_MTU
+* 4929eda vti4: Don't count header length twice on tunnel setup
+* 06b3c3f batman-adv: fix header size check in batadv_dbg_arp()
+* 480739c net: Fix vlan untag for bridge and vlan_dev with reorder_hdr off
+* 5d76473 netfilter: ebtables: fix erroneous reject of last rule
+* e2cad74 USB: OHCI: Fix NULL dereference in HCDs using HCD_LOCAL_MEM
+* 7f4ac64 xen: xenbus: use put_device() instead of kfree()
+* db57535b fbdev: Fixing arbitrary kernel leak in case FBIOGETCMAP_SPARC in sbusfb_ioctl_helper().
+* a60caea8 scsi: sd: Keep disk read-only when re-reading partition
+* 3d418b7 usb: musb: call pm_runtime_{get,put}_sync before reading vbus registers
+* 3b40952 e1000e: allocate ring descriptors with dma_zalloc_coherent
+* 34ec8d5 e1000e: Fix check_for_link return value with autoneg off
+* 089e299 watchdog: f71808e_wdt: Fix magic close handling
+* 7361dfb Btrfs: send, fix issuing write op when processing hole in no data mode
+* 2f08745 xen/pirq: fix error path cleanup when binding MSIs
+* c5f01c6 net/tcp/illinois: replace broken algorithm reference link
+* ec99dec sit: fix IFLA_MTU ignored on NEWLINK
+* 5214026 bcache: fix kcrashes with fio in RAID5 backend dev
+* e821841 r8152: fix tx packets accounting
+* 0fe836b clocksource/drivers/fsl_ftm_timer: Fix error return checking
+* 0f3eca6 netfilter: ebtables: convert BUG_ONs to WARN_ONs
+* 2ffa55e batman-adv: invalidate checksum on fragment reassembly
+* 7806534 batman-adv: fix packet checksum in receive path
+* 4f5862c md/raid1: fix NULL pointer dereference
+* 7b86d81 media: dmxdev: fix error code for invalid ioctls
+* 836053f x86/topology: Update the 'cpu cores' field in /proc/cpuinfo correctly across CPU hotplug operations
+* ce5555a locking/xchg/alpha: Fix xchg() and cmpxchg() memory ordering bugs
+* 85dc640 regulatory: add NUL to request alpha2
+* 9fac7f8 smsc75xx: fix smsc75xx_set_features()
+* 300adcc ARM: OMAP: Fix dmtimer init for omap1
+* 0ef50f0 s390/cio: clear timer when terminating driver I/O
+* 3e9b3e7 s390/cio: fix return code after missing interrupt
+* 9afcd54 kernel/relay.c: limit kmalloc size to KMALLOC_MAX_SIZE
+* ddcaf25 locking/xchg/alpha: Add unconditional memory barrier to cmpxchg()
+* 854d971 drm/exynos: fix comparison to bitshift when dealing with a mask
+* 6524a8d md raid10: fix NULL deference in handle_write_completed()
+* d7680dd mac80211: round IEEE80211_TX_STATUS_HEADROOM up to multiple of 4
+* 39e221c NFC: llcp: Limit size of SDP URI
+* 4a7cc64 ARM: OMAP1: clock: Fix debugfs_create_*() usage
+* f5441ff ARM: OMAP3: Fix prm wake interrupt for resume
+* 5ab7e72 scsi: qla4xxx: skip error recovery in case of register disconnect.
+* 6d05919 scsi: aacraid: fix shutdown crash when init fails
+* 21323aa selftests: memfd: add config fragment for fuse
+* d72c90b usb: gadget: fsl_udc_core: fix ep valid checks
+* 3a7976c usb: gadget: f_uac2: fix bFirstInterface in composite gadget
+* 44d731a scsi: qla2xxx: Avoid triggering undefined behavior in qla2x00_mbx_completion()
+* 57ee386 scsi: mptfusion: Add bounds check in mptctl_hp_targetinfo()
+* f7c0603 scsi: sym53c8xx_2: iterator underflow in sym_getsync()
+* 34bd6e7 scsi: bnx2fc: Fix check in SCSI completion handler for timed out request
+* 1da0681 scsi: ufs: Enable quirk to ignore sending WRITE_SAME command
+* 617d715 irqchip/gic-v3: Change pr_debug message to pr_devel
+* 0ee08b0 bcache: return attach error when no cache set exist
+* 11d1a3d bcache: fix for data collapse after re-attaching an attached device
+* e2febcb bcache: fix for allocator and register thread race
+* c969aa8 bcache: properly set task state in bch_writeback_thread()
+* 635716d cifs: silence compiler warnings showing up with gcc-8.0.0
+* 1a159e9 proc: fix /proc/*/map_files lookup
+* 6af42d1 xen/grant-table: Use put_page instead of free_page
+* 162180a MIPS: TXx9: use IS_BUILTIN() for CONFIG_LEDS_CLASS
+* 4c53640 ACPI: processor_perflib: Do not send _PPC change notification if not ready
+* a78a787 firmware: dmi_scan: Fix handling of empty DMI strings
+* c9d86aa x86/power: Fix swsusp_arch_resume prototype
+* 2ab6382 IB/ipoib: Fix for potential no-carrier state
+* 0a07b78 mm: pin address_space before dereferencing it while isolating an LRU page
+* 97c7900 asm-generic: provide generic_pmdp_establish()
+* 1a60f2e mm/mempolicy: add nodes_empty check in SYSC_migrate_pages
+* 7f81272 mm/mempolicy: fix the check of nodemask from user
+* 15ac59a ocfs2/acl: use 'ip_xattr_sem' to protect getting extended attribute
+* 2c09ffc ocfs2: return -EROFS to mount.ocfs2 if inode block is invalid
+* 3de8b7d RDMA/mlx5: Avoid memory leak in case of XRCD dealloc failure
+* 42c43e3 jffs2: Fix use-after-free bug in jffs2_iget()'s error handling path
+* eb8c17a HID: roccat: prevent an out of bounds read in kovaplus_profile_activated()
+* 92bd116 scsi: fas216: fix sense buffer initialization
+* f1becd4 btrfs: Fix out of bounds access in btrfs_search_slot
+* 81efefe kconfig: Fix expr_free() E_NOT leak
+* 219badd kconfig: Fix automatic menu creation mem leak
+* 02d4589 kconfig: Don't leak main menus during parsing
+* b107e54 watchdog: sp5100_tco: Fix watchdog disable bit
+* da6f78a nfs: Do not convert nfs_idmap_cache_timeout to jiffies
+* db21a7b dm thin: fix documentation relative to low water mark threshold
+* 19a4ddc tools lib traceevent: Fix get_field_str() for dynamic strings
+* 0806f6e PCI: Add function 1 DMA alias quirk for Marvell 9128
+* ec8e8ef tracing/hrtimer: Fix tracing bugs by taking all clock bases and modes into account
+* 682c267 kvm: x86: fix KVM_XEN_HVM_CONFIG ioctl
+* 3e622a5 ASoC: au1x: Fix timeout tests in au1xac97c_ac97_read()
+* a56126d firewire-ohci: work around oversized DMA reads on JMicron controllers
+* 50ecbf9 kernel/signal.c: avoid undefined behaviour in kill_something_info
+* bbab099 xen-swiotlb: fix the check condition for xen_swiotlb_free_coherent
+* db660dc libata: Blacklist some Sandisk SSDs for NCQ
+* b90b641 do d_instantiate/unlock_new_inode combinations safely
+* fac7c7e aio: fix io_destroy(2) vs. lookup_ioctx() race
+* 6d29216 affs_lookup(): close a race with affs_remove_link()
+* f69c8ff KVM: Fix spelling mistake: "cop_unsuable" -> "cop_unusable"
+* 5a19b37 MIPS: Fix ptrace(2) PTRACE_PEEKUSR and PTRACE_POKEUSR accesses to o32 FGRs
+* 0c58783 MIPS: ptrace: Expose FIR register through FP regset
+
+05-29-2018
+============
+
+#### device/asus/zenfone3/
+* c8ebaf7 zenfone3: Switch to vendor.display.config 1.1
+* 5047f75 zenfone3: Compile HWUI for Better Performance
+* 163c6d4 zenfone3: Add FlipFlap
+* 9913a42 zenfone3: sepolicy: Add missing proc_fpmod type
+* b7c46cf zenfone3: sepolicy: Properly label vendor files
+* b573df0 zenfone3: Bulk addressed sepolicy
+* f7a6849 zenfone3: configs: Sync goodix keylayouts with aosp
+* d8a428e zenfone3: AsusParts: Move to system settings menu
+
+05-28-2018
+============
+
+#### device/qcom/sepolicy/
+* cbc093e Fix path
+
+#### frameworks/base/
+* 29ba4a3 PackageManager: Don't dereference mPlatfromPackage until available
+* 3b3f81f PackageManager: Add configuration to specify vendor platform signatures
+* ec6f125 SystemUI: Enable dualTarget on CellularTile
+* 67e88ab Update text size of overflow number view
+* f076cd3 Unbreak public api by hiding substratum interfaces
+* 1876557 Roundcorners:nuke gap between content and corners (#19)
+* bfdbd98 add com.android.apps.tag permission whitelist
+* 1088cef fix android.ext.services permissions whitelist
+* d04b885 fix com.android.dialer permission whitelist
+* 52bb5f6 fix com.android.launcher3 permissions whitelist
+
+#### packages/services/Telephony/
+* 5081c0e Enhanced permission checks for TelephonyManager#endCall() API.
+* 35b91ac Telephony: adaptive icon
+
+#### system/sepolicy/
+* 22e5d3f Merge tag 'android-8.1.0_r28' of https://android.googlesource.com/platform/system/sepolicy into o8.1
+* d8b6dca Hide some denials.
+* cc9d76f priv_app: suppress denials for /proc/stat
+* c380675 Suppress denials for non-API access
+* aa189fc priv_app: move logspam suppression to core policy
+* 01ec03d Suppress denials from sdcardfs (b/67454004)
+* 89a2a8d Allow system_server to update timerslack_ns for hal_audio_default
+* 997e371 system_server: allow writing to timerslack_ns
+* e3b6af2 Sepolicy: Fix perfprofd path
+* d60ef7b Revert "sepolicy: Conditionally restore support for legacy f_adb interface"
+* a248d26 Add pocket service policy for O
+* 1a58d73 Adapt add_service uses for TARGET_HAS_LEGACY_CAMERA_HAL1
+* 54ee790 Add rules required for TARGET_HAS_LEGACY_CAMERA_HAL1
+* 1bc99fd SELinux: added to the policies without entries into the compatibility mapping file
+* 14f6780 Initial sepolicy rules for substratum service
+* d946aad Introduce sepolicy exceptions for theme assets
+* 920c3a8 sepolicy: Allow recovery to write to rootfs
+* f3d7e69 Revert "sepolicy: Fix up exfat and ntfs support"
+* b6d110f Revert "sepolicy: Add missing exfat and fuseblk types"
+* fa37c2e add sload_f2fs permission
+* 01e88c7 make_f2fs: grant rw to vold
+* 16592b3 Allow e2fs to format cache
+* b0ceb62 Allow e2fs to rw devpts
+* ba412bd Revert "system: sepolicy: Import fuseblk from vendor/cm"
+* 4272791 sepolicy: add sudaemon to ignore list
+* 8b3a585 sepolicy: update policies for sudaemon on O
+* ee61f67 sepolicy: Allow su by apps on userdebug_or_eng
+* 4ee274a sepolicy: We need to declare before referencing
+* eab1709 treble sepolicy tests: Workaround /sbin services labels
+* 1ff418a sepolicy: Add missing exfat and fuseblk types
+* 7fdd8c4 sepolicy: Fix up exfat and ntfs support
+* 35e7a78 sepolicy: Ignore custom additions
+* 14f5a2c sepolicy: Allow system apps to access selinuxfs
+* 57b2a6d sepolicy: Conditionally restore support for legacy f_adb interface
+* b02e5a6 Revert "Restrict BOARD_PLAT_[PUBLIC|PRIVATE]_SEPOLICY_DIRS to one dir."
+* c7d2671 Allow redeclaring typeattributes
+* 7bc48f9 system: sepolicy: Import fuseblk from vendor/cm
+* be0820f sepolicy: Also allow vendor_file text relocations
+* b820d1e sepolicy: Allow optional platform text relocations
+* 86302b8 sepolicy: allow sdcard access via sdcardfs
+* a1bc10a Allow appdomain to read/write files in sdcard_posix
+* 099195d sepolicy: allow vold to mount ext4 sdcard
+* 56eee04 sepolicy: New type sdcard_posix for labeled filesystems
+
+05-26-2018
+============
+
+#### device/asus/zenfone3/
+* 8ed3dd9 zenfone3: configs: Convert thermal-engine.conf to text
+
+#### kernel/asus/msm8953/
+* 52f4b1d Merge tag 'v3.18.110' of https://kernel.googlesource.com/pub/scm/linux/kernel/git/stable/linux-stable into lineage-15.1
+
+#### packages/apps/Settings/
+* b899ecf s/Wolvesden/freedomhub/
+
+05-25-2018
+============
+
+#### build/make/
+* f1c1ec6 Merge tag 'android-8.1.0_r28' of https://android.googlesource.com/platform/build into o8.1
+
+#### build/soong/
+* 5be7589 Merge tag 'android-8.1.0_r28' of https://android.googlesource.com/platform/build/soong into o8.1
+
+#### device/asus/zenfone3/
+* ade7d32 zenfone3: Remove asus gauge init
+* f5e4b8b zenfone3: Remove asus sp and ssn services
+
+#### frameworks/av/
+* 2ef403c Merge tag 'android-8.1.0_r28' of https://android.googlesource.com/platform/frameworks/av into o8.1
+
+#### frameworks/base/
+* 6b49f3d Merge tag 'android-8.1.0_r28' of https://android.googlesource.com/platform/frameworks/base into o8.1
+* d4b693d Lmao
+
+#### frameworks/native/
+* a598398 Merge tag 'android-8.1.0_r28' of https://android.googlesource.com/platform/frameworks/native into o8.1
+
+#### kernel/asus/msm8953/
+* b87af3a Linux 3.18.110
+* b233cc9 x86/kexec: Avoid double free_page() upon do_kexec_load() failure
+* f9322eb hfsplus: stop workqueue when fill_super() failed
+* a77831e cfg80211: limit wiphy names to 128 bytes
+* 58b7ce6 scsi: sg: allocate with __GFP_ZERO in sg_build_indirect()
+* badf15c scsi: libsas: defer ata device eh commands to libata
+* f7a4463 ext2: fix a block leak
+* 8561164 tcp: purge write queue in tcp_connect_init()
+* 332d1b9 net: test tailroom before appending to linear skb
+* 21bcf30 ARM: 8772/1: kprobes: Prohibit kprobes on get_user functions
+* e5f28fe tick/broadcast: Use for_each_cpu() specially on UP kernels
+* 8414385 ARM: 8771/1: kprobes: Prohibit kprobes on do_undefinstr
+* 56bd852 efi: Avoid potential crashes, fix the 'struct efi_pci_io_protocol_32' definition for mixed mode
+* 4ef8259 powerpc/powernv: Fix NVRAM sleep in invalid context when crashing
+* f7b7273 tracing/x86/xen: Remove zero data size trace events trace_xen_mmu_flush_tlb{_all}
+* dc64981 powerpc: Don't preempt_disable() in show_cpuinfo()
+* 8bfbeb8 ALSA: control: fix a redundant-copy issue
+* 4caf3f0 ALSA: usb: mixer: volume quirk for CM102-A+/102S+
+* 41585e8 usbip: usbip_host: fix bad unlock balance during stub_probe()
+* d1641e5 usbip: usbip_host: fix NULL-ptr deref and use-after-free errors
+* d0f35e2 usbip: fix error handling in stub_probe()
+* 3d355e2 usbip: usbip_host: run rebind from exit when module is removed
+* 55c9990 usbip: usbip_host: delete device from busid_table after rebind
+* 72f8ba7 usbip: usbip_host: refine probe and disconnect debug msgs to be useful
+* 9535063 kernel/exit.c: avoid undefined behaviour when calling wait4()
+* 46736d5 pipe: cap initial pipe capacity according to pipe-max-size limit
+* 8ef1995 l2tp: revert "l2tp: fix missing print session offset info"
+* 50a8b06 Revert "ARM: dts: imx6qdl-wandboard: Fix audio channel swap"
+* a92d857 lockd: lost rollback of set_grace_period() in lockd_down_net()
+* 5adf47b qmi_wwan: do not steal interfaces from class drivers
+* 6723603 sctp: delay the authentication for the duplicated cookie-echo chunk
+* c0b1359 sctp: fix the issue that the cookie-ack with auth can't get processed
+* 7081fa7 tcp: ignore Fast Open on repair mode
+* 954db9a bonding: do not allow rlb updates to invalid mac
+* 3293c85 tg3: Fix vunmap() BUG_ON() triggered from tg3_free_consistent().
+* defbbf4 sctp: use the old asoc when making the cookie-ack chunk in dupcook_d
+* 2e7d9d7 r8169: fix powering up RTL8168h
+* cd38252 net: support compat 64-bit time in {s,g}etsockopt
+* 8beff8d net_sched: fq: take care of throttled flows before reuse
+* 0a754ea net/mlx4_en: Verify coalescing parameters are in range
+* 7ac9e8f net: ethernet: sun: niu set correct packet size in skb
+* 018c802 llc: better deal with too small mtu
+* fb10481 ipv4: fix memory leaks in udp_sendmsg, ping_v4_sendmsg
+* 7eaa949 dccp: fix tasklet usage
+* 32037ab bridge: check iface upper dev when setting master via ioctl
+* 683e952 8139too: Use disable_irq_nosync() in rtl8139_poll_controller()
+
+#### manifest/
+* 5e94b42 Merge ANDROID_8.1.0_r28
+
+#### packages/apps/Settings/
+* 06670fc Merge tag 'android-8.1.0_r28' of https://android.googlesource.com/platform/packages/apps/Settings into o8.1
+* 5362486 My Stupid derps
+
+#### vendor/asus/zenfone3/
+* af6dbdc zenfone3: Remove ssn and asusGaugeInit.sh
+
+05-24-2018
+============
+
+#### build/soong/
+* 0ad058b Allow providing flex and bison binaries
+
+#### frameworks/av/
+* 1fa172b services: audioflinger: Threads: increase max tracks per uid
+* a482f8c seccomp_policy: mediaextractor-arm64.policy: remove _llseek
+* 6f7b1b6 audiopolicy: revert selecting speaker when a2dp is suspended
+* 2a6c65d audiopolicy: update APM to use custom audio policy configuration
+* 1e758c4 audio: Check if A2DP playback happens via primary output
+* 8aee7f0 camera: Fix high battery drain after using flashlight
+
+#### vendor/aim/
+* 5bc0d7d tools: getb64key - print the base64 version of a PEM public key file
+* 0eb7d78 apns: sprint: n.ispsn -> x.ispsn
+* ba2698a Add missing sprint roaming APN and set bearer_bitmasks.
+* d388d11 apn: Update Indian carriers
+* 9adfb40 apn: Fix typo in Rogers roaming protocol
+* 15fc7ad apns: Adjust MetroPCS apn to allow USB tether
+* e5fafc4 apn: bring some sanity
+* e72fef9 apns: sprint mms: mms.sprintpcs.com > oap7.sprintpcs.com
+* 38a7fa4 Add missing sprint roaming APN and set bearer_bitmasks.
+* a543427 sprint n.ispsn -> x.ispsn
+* 25dd079 fonts: Add Audiowide Font
+* d65bb4b new fonts
+* d051a47 Added new fonts
+* a08e314 Add font package
+
+05-23-2018
+============
+
+#### device/asus/zenfone3/
+* 0b10cd5 zenfone3: sepolicy: Add selinux domain for asus pixelmaster camera
+
+05-22-2018
+============
+
+#### device/qcom/sepolicy/
+* 9a874d6 sepolicy: allow vold to read persist dirs
+* 912ef43 sepolicy: qti_init_shell needs to read dir too
+* 2490380 msm8916: Label the FRP partition
+* e4b31bb legacy: Make WCNSS props readable to hci_qcomm_init
+
+#### kernel/asus/msm8953/
+* b0d2cff Merge "net: ipc_router: Remove wakeup-source for Sensor ports" into kernel.lnx.3.18.r33-rel
+* 334c0a3 net: ipc_router: Remove wakeup-source for Sensor ports
+* ad56cac mmc: core: Ignore bus resume flags when card removal event is detected
+* 1ff9fa9 Merge f7354ef7211a0804a867daf7e66db427e0cb1f05 on remote branch
+
+05-21-2018
+============
+
+#### device/asus/zenfone3/
+* 786d6d5 zenfone3: device.mk: Build wifilogd
+* f74f048 zenfone3: gps: Update to CAF Tag LA.UM.6.6.r1-05300-89xx.0
+* 66150bc zenfone3: gps: Update gps configs from stock WW_15.0410.1804.60
+* a0de6c8 zenfone3: device.mk: Remove unused gps.msm8953
+
+#### device/qcom/sepolicy/
+* 3ef5cf8 legacy: Resolve msm8992/4 perfd denials
+* 731dac5 legacy: perf: allow checking for existence of other processes (signull)
+* d61e5fb legacy: Label BT_QCA6174 sysfs files
+* a39771f legacy: Fix msm8992/4 mm-qcamerad sysfs denials
+* 554b70b legacy: Fix labelling msm8992/4 SSR sysfs
+
+05-20-2018
+============
+
+#### device/asus/zenfone3/
+* 919b527 zenfone3: Use hardware feature definition to indicate Passpoint support
+* acfadf1 zenfone3: rootdir: Don't set the model prefix twice for usb
+* 9e93ad3 zenfone3: init: Add "ASUS_" prefix to ro.product.model
+* acee624 zenfone3: Restore ANT+ support
+* 0d5ca3c zenfone3: manifest: Enable wifi HIDL version 1.1
+
+05-17-2018
+============
+
+#### device/asus/zenfone3/
+* e69cbfd zenfone3: Remove gamedwhitelist config
+* 9e47166 zenfone3: sepolicy: Add missing asus domains
+* db928d0 zenfone3: rootdir: Remove touch firmware auto update
+* 6ac7de7 zenfone3: sepolicy: Fix typo in property_contexts
+* 9395e07 zenfone3: rootdir: Clean up unused services
+* 1affbf5 zenfone3: init: Update fingerprints
+* 8037b09 zenfone3: configs: Fix 1080p60 video recording
+
+#### kernel/asus/msm8953/
+* f05edd9 Merge tag 'v3.18.109' of https://kernel.googlesource.com/pub/scm/linux/kernel/git/stable/linux-stable into lineage-15.1
+
+#### vendor/asus/zenfone3/
+* 93f00b2 zenfone3: Update blobs from asus WW_15.0410.1804.60
+
+05-16-2018
+============
+
+#### kernel/asus/msm8953/
+* 7eac0d4 Linux 3.18.109
+* 3c320b0 tracing/uprobe_event: Fix strncpy corner case
+* 3d9c108 can: kvaser_usb: Increase correct stats counter in kvaser_usb_rx_can_msg()
+* 30041c8 tracing: Fix regex_match_front() to not over compare the test string
+* e496070 libata: Apply NOLPM quirk for SanDisk SD7UB3Q*G1001 SSDs
+* ee39500 rfkill: gpio: fix memory leak in probe error path
+* a24bce4 tcp: fix TCP_REPAIR_QUEUE bound checking
+* d55b31c perf: Remove superfluous allocation error check
+* 03e5211 soreuseport: initialise timewait reuseport field
+* fbbbfa5 net: fix uninit-value in __hw_addr_add_ex()
+* 471a441 net: initialize skb->peeked when cloning
+* dd0306f net: fix rtnh_ok()
+* 24e7995 netlink: fix uninit-value in netlink_sendmsg
+* 7c6b9b5 usb: musb: host: fix potential NULL pointer dereference
+* 98db87d USB: serial: visor: handle potential invalid device configuration
+* 613ac78 NET: usb: qmi_wwan: add support for ublox R410M PID 0x90b2
+* fe73842 RDMA/mlx5: Protect from shift operand overflow
+* b73892f ALSA: aloop: Add missing cable lock to ctl API callbacks
+* a69e608 ALSA: aloop: Mark paused device as inactive
+* 2937092 ALSA: seq: Fix races at MIDI encoding in snd_virmidi_output_trigger()
+* f92cb23 ALSA: pcm: Check PCM state at xfern compat ioctl
+* a4e89ef perf session: Fix undeclared 'oe'
+* 2e9cbae perf/core: Fix the perf_cpu_time_max_percent check
+* a88e99b percpu: include linux/sched.h for cond_resched()
+
+05-15-2018
+============
+
+#### device/asus/zenfone3/
+* 6081b1e zenfone3: bluetooth: Sync with caf
+* 22b823a zenfone3: Update data-ipa-cfg-mgr from caf
+* 49b3322 zenfone3: configs: Update media configs from latest stock
+* fc41537 zenfone3: Update stock acdb_ids with acdb_get
+* 489b60d zenfone3: Remove unused chromatix libs
+* 070c2bd zenfone3: proprietary-files: Remove unused acdbdata files
+* 87cd10d zenfone3: proprietary-files: Add missing gyro vstab lib
+* 729a055 zenfone3: proprietary-files: Add missing 64bit libs
+* 9306a82 zenfone3: proprietary-files: Add missing truescanner lib
+* e1c6df8 zenfone3: proprietary-files: Add missing facedetection libs
+* b7ee6d9 zenfone3: proprietart-files-qc: Add missing omx blobs
+* 6af2517 zenfone3: proprietary-files: Add missing camera scve libs
+* e3923af zenfone3: proprietary-files: Add missing actuator libs
+
+#### kernel/asus/msm8953/
+* 2de62cf drivers: prima: Update to CAF Tag LA.UM.6.6.r1-08500-89xx.0
+
+05-14-2018
+============
+
+#### kernel/asus/msm8953/
+* 93b3b8d Merge tag 'LA.UM.6.6.r1-08500-89xx.0' of https://source.codeaurora.org/quic/la/kernel/msm-3.18 into lineage-15.1
+
+05-13-2018
+============
+
+#### kernel/asus/msm8953/
+* 6fce4c7 defconfigs: Enable more F2FS features
+
+05-11-2018
+============
+
+#### device/asus/zenfone3/
+* 2f8fd03 zenfone3: sepolicy: Add bluetooth_loader domain
+
+05-10-2018
+============
+
+#### frameworks/base/
+* e9f31ae Fix potential NPE and handle disabled packages properly
+* fee68a3 Add progress for font apply [1/2]
+* a62842a Dynamic font fix for FDE devices
+* a108fad Fonts: Update keyguard when font changes
+* c589843 Introduce FontService
+* 1a24930 ChooserActivity blacklist: fix FC on clean flash
+* 38b66e3 ChooserAcitivity: add blacklist option to items longpress menu
+* 8cf4f85 Blacklist apps in the ChooserAcitivity (e.g. Share button) [1/2]
+* 16bfc93 Smart Pixels: Switch to registered receiver
+* b9cbe95 Move Smart Pixels out of SystemUI
+* dd92444 Fix NullPointerException on systemui restart with smart pixel enabled.
+* 524fca2 SystemUI: Refactor Smart Pixels tile
+* e798697 SystemUI: Add Smart Pixels tile
+* 1c7e61b SystemUI: Smart Pixels [1/2]
+* 21add9a SystemUI: screen-dimmer-pixel-filter
+* 4fbf5f0 Fix Recents Tasklock
+
+#### packages/apps/Settings/
+* d61b34f ProximityOnWakePreferenceController: fix crash in settings-search due to missing implementation of "PreferenceControllerMixin".
+* 6fbbb7d add PreferenceController for proximity wake
+* 4a8b293 Prox Switch: Match base default off correct switch call in fragment
+* 174ee27 Settings: Proximity wake
+* e4a5878 Add a preference controller for Smart Pixels
+* c8ece24 Settings: External Smart Pixels fragment launch Necessary for Smart Pixels tile. Based on change by Mazda--.
+* 2b4d787 Add progress for font apply [2/2]
+* b432eb1 Add Font preference for font manager
+
+#### packages/apps/freedomhub/
+* b2387ca Update Smart Pixels menu
+* a546e70 Smart Pixels [2/2]
+
+05-09-2018
+============
+
+#### build/make/
+* 78670b5 Make change and version bump to OPM6.171019.030.B1
+* d6071dc [DO NOT MERGE] Updating security string for oc-mr1-dev to 2018-06-05 Bug: 78240102 (cherry picked from commit 75164b086db2588093747047005fe2fe53820d3b)
+
+#### device/asus/zenfone3/
+* 8d47dd9 zenfone3: rootdir: Set model and manufacturer for USB
+* 8b5fa5e zenfone3: init: Use switch statements for model selection
+* 8c78e4a zenfone3: init: Add global Z012 variant
+* 8a325f7 zenfone3: init: Split multisim prop for singlesim varients
+* 143cb5a zenfone3: init: Improve varient naming
+* 73e950f zenfone3: Add modem build date assertion
+* fd43f3b zenfone3: Correct group for spk_amp_cal * resolves dac_override permission for spk_amp_cal
+* 4cd1884 zenfone3: Add seclabels to services
+* e395770 zenfone3: sepolicy: Rework sepolicy for fingerprint
+* 52a3a22 zenfone3: rootdir: Start fpservice when boot is complete
+* 7951d69 Revert "zenfone3: rootdir: Execute fpservice on post-fs"
+* c17a709 Revert "zenfone3: rootdir: Increase reliability of fpservice"
+* 41ddc89 zenfone3: sepolicy: Rework amplifier sepolicy
+* 0e3b362 zenfone3: rootdir: Start Amplifier Calibration when boot is complete
+* d6bec20 zenfone3: sepolicy: fix missing domain for piq_sh
+* 4df86e4 zenfone3: sepolicy: Allow system_server to read factory_file
+* 9200243 zenfone3: Resolve wcnss_service denials
+* 0a67843 zenfone3: wifi: enable QPower and Deep sleep at the same time
+* ed5ddc7 zenfone3: sepolicy: Remove untrusted_app policies
+* d37c44e zenfone3: sepolicy: Allow system_app to write sysfs_gesture_device
+
+#### frameworks/av/
+* e3af43d Merge cherrypicks of [4025538, 4025981, 4025580, 4024762, 4024763, 4025174, 4026015, 4026016, 4025704, 4025983, 4025597, 4025986, 4025988, 4025990, 4024386, 4024387, 4024388, 4024389, 4024390, 4024391, 4024392, 4024766, 4026038, 4024767, 4026039, 4026040, 4026041, 4026042, 4026043, 4026044, 4026045, 4026046, 4026047, 4026048, 4025720] into sparse-4749909-L37000000170952244
+* 9bb909f Sanitize effect descriptors for AudioPolicyService binder calls.
+* f36bbc1 Add check preventing div0 issue
+* ab88b06 Init gain config to prevent uninit leak.
+
+#### frameworks/base/
+* 62b35ab Merge cherrypicks of [4025538, 4025981, 4025580, 4024762, 4024763, 4025174, 4026015, 4026016, 4025704, 4025983, 4025597, 4025986, 4025988, 4025990, 4024386, 4024387, 4024388, 4024389, 4024390, 4024391, 4024392, 4024766, 4026038, 4024767, 4026039, 4026040, 4026041, 4026042, 4026043, 4026044, 4026045, 4026046, 4026047, 4026048, 4025720] into sparse-4749909-L37000000170952244
+* d08a821 DO NOT MERGE (O) Revoke permision when group changed
+* 33a4e9f ResStringPool: Fix security vulnerability
+* fe88b60 Use concrete CREATOR instance for parceling lists
+* 00ec414 Rework thumbnail cleanup
+* 66fa94d DO NOT MERGE - fix AFM.getComponentNameFromContext()
+* 160b70f Proper autofill fix to let phone process autofill Settings activity.
+* 6eb7763 Make sure apps cannot forge package name on AssistStructure used for Autofill.
+
+#### frameworks/opt/telephony/
+* 74fa001 Merge cherrypicks of [4025538, 4025981, 4025580, 4024762, 4024763, 4025174, 4026015, 4026016, 4025704, 4025983, 4025597, 4025986, 4025988, 4025990, 4024386, 4024387, 4024388, 4024389, 4024390, 4024391, 4024392, 4024766, 4026038, 4024767, 4026039, 4026040, 4026041, 4026042, 4026043, 4026044, 4026045, 4026046, 4026047, 4026048, 4025720] into sparse-4749909-L37000000170952244
+* 75ffe6b Fixed invalid pdu issue
+
+#### hardware/interfaces/
+* a224d3f Merge cherrypicks of [4027705, 4027707, 4027735, 4027736, 4026840, 4025434, 4027755, 4025350, 4025351, 4025352, 4027737, 4027738, 4027660, 4027661, 4027663, 4027665, 4027102, 4027103, 4027104, 4027105, 4027106, 4027717, 4027718, 4027756, 4025353, 4027710, 4027711, 4027712, 4027713, 4027714, 4027795, 4027796, 4027797, 4027798, 4027757, 4027758, 4027799, 4027800, 4026842, 4027667, 4027668, 4027669] into sparse-4732990-L09800000171085564
+* 47df995 cas: fix UAF in descrambler -- DO NOT MERGE
+* 4a32fd6 Merge cherrypicks of [4025658, 4025975, 4025659, 4025537, 4025557, 4025976, 4025579, 4024760, 4024761, 4025171, 4025172, 4025173, 4025703, 4025977, 4025596, 4025978, 4025979, 4025980, 4024381, 4024382, 4024383, 4024384, 4024385, 4024764, 4025982, 4024765, 4025984, 4025985, 4025987, 4025989, 4025991, 4025992, 4025993, 4025994, 4026035, 4026036, 4025558, 4025705, 4025706, 4025188, 4026037, 4025660, 4025661, 4025719, 4025581, 4025582, 4025583] into sparse-4732991-L90500000170950426
+* 764c1ed Merge cherrypicks of [4025538, 4025981, 4025580, 4024762, 4024763, 4025174, 4026015, 4026016, 4025704, 4025983, 4025597, 4025986, 4025988, 4025990, 4024386, 4024387, 4024388, 4024389, 4024390, 4024391, 4024392, 4024766, 4026038, 4024767, 4026039, 4026040, 4026041, 4026042, 4026043, 4026044, 4026045, 4026046, 4026047, 4026048, 4025720] into sparse-4749909-L37000000170952244
+* e87f7e2 cas: fix UAF in descrambler -- DO NOT MERGE
+* 17a50f7 cas: fix UAF in descrambler -- DO NOT MERGE
+
+#### kernel/asus/msm8953/
+* b359d0b arm64: configs: Add trimmed-down TWRP defconfig
+
+#### packages/apps/Messaging/
+
+#### packages/providers/MediaProvider/
+* d549372 Merge cherrypicks of [4025538, 4025981, 4025580, 4024762, 4024763, 4025174, 4026015, 4026016, 4025704, 4025983, 4025597, 4025986, 4025988, 4025990, 4024386, 4024387, 4024388, 4024389, 4024390, 4024391, 4024392, 4024766, 4026038, 4024767, 4026039, 4026040, 4026041, 4026042, 4026043, 4026044, 4026045, 4026046, 4026047, 4026048, 4025720] into sparse-4749909-L37000000170952244
+* 7775bbe Rework thumbnail cleanup
+
+#### system/bt/
+* 61914e0 Merge cherrypicks of [4025538, 4025981, 4025580, 4024762, 4024763, 4025174, 4026015, 4026016, 4025704, 4025983, 4025597, 4025986, 4025988, 4025990, 4024386, 4024387, 4024388, 4024389, 4024390, 4024391, 4024392, 4024766, 4026038, 4024767, 4026039, 4026040, 4026041, 4026042, 4026043, 4026044, 4026045, 4026046, 4026047, 4026048, 4025720] into sparse-4749909-L37000000170952244
+* 8ce47dd DO NOT MERGE SMP: Validate remote elliptic curve points
+* f0e8080 DO NOT MERGE Add bounds check for BNEP_Write
+* 16a1901 DO NOT MERGE Initialize local variable in gatts_process_read_by_type_req
+* f040194 DO NOT MERGE Fix OOB read in process_l2cap_cmd
+* 914ff2e PAN: Always allocate in bta_pan_data_buf_ind_cback
+* c345851 DO NOT MERGE Handle bad packet length in gatts_process_read_req
+* 0ce2d0b DO NOT MERGE Drop LE CoC fragments when frame size is too big
+* f35f01f DO NOT MERGE Fix unexpected behavior in bta_dm_sdp_result
+
