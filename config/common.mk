@@ -244,6 +244,11 @@ DEVICE_PACKAGE_OVERLAYS += vendor/aim/overlay/fod
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aim/overlay/fod
 endif
 
+# Cutout control overlays
+PRODUCT_PACKAGES += \
+    HideCutout \
+    StatusBarStock
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aim/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/aim/overlay/common
 
