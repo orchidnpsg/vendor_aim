@@ -137,7 +137,8 @@ PRODUCT_PACKAGES += \
     Profiles \
     TrebuchetQuickStep \
     Updater \
-    WeatherProvider
+    WeatherProvider \
+    Longshot
 
 # Accents
 PRODUCT_PACKAGES += \
