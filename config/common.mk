@@ -250,6 +250,7 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
 
 include vendor/aim/config/version.mk
 include vendor/aim/bootanimation/bootanimation.mk
+include vendor/aim/config/fonts.mk
 -include vendor/aim-priv/keys/keys.mk
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aim/config/partner_gms.mk
