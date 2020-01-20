@@ -245,6 +245,9 @@ PRODUCT_DEXPREOPT_SPEED_APPS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aim/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/aim/overlay/common
 
+# Include AIM theme files
+include vendor/aim/themes/backgrounds/themes.mk
+
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/aim/build/target/product/security/lineage
 
