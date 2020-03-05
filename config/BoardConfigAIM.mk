@@ -8,10 +8,10 @@ ifeq ($(WITH_LINEAGE_CHARGER),true)
     BOARD_HAL_STATIC_LIBRARIES := libhealthd.lineage
 endif
 
-include vendor/lineage/config/BoardConfigKernel.mk
+include vendor/aim/config/BoardConfigKernel.mk
 
 ifeq ($(BOARD_USES_QCOM_HARDWARE),true)
-include vendor/lineage/config/BoardConfigQcom.mk
+include vendor/aim/config/BoardConfigQcom.mk
 endif
 
-include vendor/lineage/config/BoardConfigSoong.mk
+include vendor/aim/config/BoardConfigSoong.mk
