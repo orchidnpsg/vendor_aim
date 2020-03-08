@@ -16,7 +16,7 @@
 # -----------------------------------------------------------------
 # Lineage OTA update package
 
-AIM_TARGET_PACKAGE := $(PRODUCT_OUT)/AIM-$(AIM_VERSION).zip
+AIM_TARGET_PACKAGE := $(PRODUCT_OUT)/$(AIM_VERSION).zip
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
