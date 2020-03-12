@@ -245,6 +245,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.face.moto_unlock_service=true
 
+ifeq ($(EXTRA_FOD_ANIMATIONS),true)
+DEVICE_PACKAGE_OVERLAYS += vendor/aim/overlay/fod
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aim/overlay/fod
+endif
+
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/aim/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/aim/overlay/common
 
