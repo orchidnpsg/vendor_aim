@@ -1,6 +1,4 @@
-# Copyright (C) 2017 AIMROM Projet
-#
-#         ANAND RAMACHANDRAN
+# Copyright (C) 2017, 2020 AIMROM
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,10 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter 480,$(TARGET_SCREEN_WIDTH)),)
-    PRODUCT_COPY_FILES += \
-        vendor/aim/prebuilt/bootanimation/480.zip:system/media/bootanimation.zip
-endif
 ifneq ($(filter 720,$(TARGET_SCREEN_WIDTH)),)
     PRODUCT_COPY_FILES += \
         vendor/aim/prebuilt/bootanimation/720.zip:system/media/bootanimation.zip
