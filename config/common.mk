@@ -253,6 +253,7 @@ PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/aim/build/target/product/security/lineage
 
 include vendor/aim/config/version.mk
+include vendor/aim/bootanimation/Android.mk
 -include vendor/aim-priv/keys/keys.mk
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aim/config/partner_gms.mk
