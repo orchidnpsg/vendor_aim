@@ -64,12 +64,7 @@ function breakfast()
                 variant="userdebug"
             fi
 
-            if ! check_product lineage_$target && check_product aim_$target; then
-                echo "** Warning: '$target' is using AIM-based makefiles. This will be deprecated in the next major release."
-                lunch aim_$target-$variant
-            else
-                lunch lineage_$target-$variant
-            fi
+            lunch aim_$target-$variant
         fi
     fi
     return $?
