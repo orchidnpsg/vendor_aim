@@ -12,15 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ifneq ($(filter 720,$(TARGET_SCREEN_WIDTH)),)
+ifneq ($(filter 720 1080 1440,$(TARGET_SCREEN_WIDTH)),)
     PRODUCT_COPY_FILES += \
-        vendor/aim/prebuilt/bootanimation/720.zip:system/media/bootanimation.zip
-endif
-ifneq ($(filter 1080,$(TARGET_SCREEN_WIDTH)),)
-    PRODUCT_COPY_FILES += \
-        vendor/aim/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
-endif
-ifneq ($(filter 1440,$(TARGET_SCREEN_WIDTH)),)
-    PRODUCT_COPY_FILES += \
-        vendor/aim/prebuilt/bootanimation/1440.zip:system/media/bootanimation.zip
+        vendor/aim/prebuilt/bootanimation/$(TARGET_SCREEN_WIDTH).zip:system/media/bootanimation.zip
 endif
