@@ -136,7 +136,8 @@ PRODUCT_PACKAGES += \
     TrebuchetQuickStep \
     Updater \
     WeatherProvider \
-    Longshot
+    Longshot \
+    OmniSwitch
 
 # Accents
 PRODUCT_PACKAGES += \
