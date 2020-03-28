@@ -41,6 +41,9 @@
 
     <privapp-permissions package="com.android.systemui">
         <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.SHUTDOWN"/>
+        <permission name="android.permission.WRITE_APN_SETTINGS"/>
     </privapp-permissions>
 
 </permissions>
