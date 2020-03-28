@@ -258,3 +258,8 @@ include vendor/aim/config/fonts.mk
 -include vendor/aim-priv/keys/keys.mk
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aim/config/partner_gms.mk
+
+# GApps
+ifeq ($(WITH_GAPPS),true)
+include vendor/pixelgapps/pixel-gapps.mk
+endif
