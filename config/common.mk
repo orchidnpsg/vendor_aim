@@ -137,10 +137,14 @@ PRODUCT_PACKAGES += \
     LockClock \
     Profiles \
     TrebuchetQuickStep \
-    Updater \
     WeatherProvider \
     Longshot \
     OmniSwitch
+
+ifeq ($(AIM_BUILD_TYPE),Official)
+PRODUCT_PACKAGES += \
+    Updater
+endif
 
 # Accents
 PRODUCT_PACKAGES += \
