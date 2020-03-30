@@ -1,6 +1,8 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
+include vendor/aim/config/version.mk
+
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
@@ -252,7 +254,6 @@ include vendor/aim/themes/backgrounds/themes.mk
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/aim/build/target/product/security/lineage
 
-include vendor/aim/config/version.mk
 include vendor/aim/bootanimation/bootanimation.mk
 include vendor/aim/config/fonts.mk
 -include vendor/aim-priv/keys/keys.mk
