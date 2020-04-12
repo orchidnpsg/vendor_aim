@@ -143,7 +143,8 @@ PRODUCT_PACKAGES += \
     TrebuchetQuickStep \
     WeatherProvider \
     Longshot \
-    OmniSwitch
+    OmniSwitch \
+    OmniStyle
 
 ifeq ($(AIM_BUILD_TYPE),Official)
 PRODUCT_PACKAGES += \
