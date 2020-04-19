@@ -144,7 +144,8 @@ PRODUCT_PACKAGES += \
     WeatherProvider \
     Longshot \
     OmniSwitch \
-    OmniStyle
+    OmniStyle \
+    OPScreenRecord
 
 ifeq ($(AIM_BUILD_TYPE),Official)
 PRODUCT_PACKAGES += \
