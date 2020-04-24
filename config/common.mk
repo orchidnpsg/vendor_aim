@@ -144,7 +144,8 @@ PRODUCT_PACKAGES += \
     Longshot \
     OmniSwitch \
     OmniStyle \
-    OPScreenRecord
+    OPScreenRecord \
+    ViaBrowser
 
 ifeq ($(AIM_BUILD_TYPE),Official)
 PRODUCT_PACKAGES += \
