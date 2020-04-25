@@ -30,7 +30,10 @@ PRODUCT_PACKAGES += \
     LockClock \
     Profiles \
     TrebuchetQuickStep \
-    WeatherProvider \
+    WeatherProvider
+
+# AIM packages
+PRODUCT_PACKAGES += \
     Longshot \
     OmniSwitch \
     OmniStyle \

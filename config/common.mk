@@ -66,7 +66,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/base/data/keyboards/Vendor_045e_Product_028e.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/Vendor_045e_Product_0719.kl
 
-# This is Lineage!
+# This is AIMROM!
 PRODUCT_COPY_FILES += \
     vendor/aim/config/permissions/org.lineageos.android.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.android.xml \
     vendor/aim/config/permissions/privapp-permissions-lineage-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lineage.xml \
@@ -125,7 +125,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     LineageParts \
     LineageSettingsProvider \
-    LineageSetupWizard \
+    LineageSetupWizard
 
 ifeq ($(AIM_BUILD_TYPE),Official)
 PRODUCT_PACKAGES += \
@@ -220,12 +220,8 @@ DEVICE_PACKAGE_OVERLAYS += vendor/aim/overlay/common
 # Include AIM theme files
 include vendor/aim/themes/backgrounds/themes.mk
 
-PRODUCT_EXTRA_RECOVERY_KEYS += \
-    vendor/aim/build/target/product/security/lineage
-
 include vendor/aim/bootanimation/bootanimation.mk
 include vendor/aim/config/fonts.mk
--include vendor/aim-priv/keys/keys.mk
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
 -include vendor/aim/config/partner_gms.mk
 
