@@ -14,12 +14,12 @@
 # limitations under the License.
 #
 
-ifeq ($(TARGET_SCREEN_RES), 720)
-	PRODUCT_COPY_FILES += vendor/aim/bootanimation/720p/bootanimation.zip:system/media/bootanimation.zip
-else ifeq ($(TARGET_SCREEN_RES), 1080)
-	PRODUCT_COPY_FILES += vendor/aim/bootanimation/1080p/bootanimation.zip:system/media/bootanimation.zip
-else ifeq ($(TARGET_SCREEN_RES), 1440)
-	PRODUCT_COPY_FILES += vendor/aim/bootanimation/1440p/bootanimation.zip:system/media/bootanimation.zip
+ifneq ($(filter 720 1080 1440,$(TARGET_SCREEN_RES)),)
+# Custom bootanimation
+PRODUCT_COPY_FILES += \
+    vendor/aim/bootanimation/$(TARGET_SCREEN_RES)p/bootanimation.zip:system/media/bootanimation.zip
 else
-	PRODUCT_COPY_FILES += vendor/aim/bootanimation/1080p/bootanimation.zip:system/media/bootanimation.zip
+# Assume 1080p
+PRODUCT_COPY_FILES += \
+    vendor/aim/bootanimation/1080p/bootanimation.zip:system/media/bootanimation.zip
 endif
