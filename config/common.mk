@@ -72,10 +72,8 @@ PRODUCT_COPY_FILES += \
 # This is AIMROM!
 PRODUCT_COPY_FILES += \
     vendor/aim/config/permissions/org.lineageos.android.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/org.lineageos.android.xml \
-    vendor/aim/config/permissions/privapp-permissions-lineage-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-lineage.xml \
-    vendor/aim/config/permissions/privapp-permissions-lineage-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-lineage.xml \
-    vendor/aim/config/permissions/privapp-permissions-cm-legacy.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-cm-legacy.xml \
-    vendor/aim/config/permissions/privapp-permissions-aim-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-aim.xml
+    vendor/aim/config/permissions/privapp-permissions-aim-system.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-aim.xml \
+    vendor/aim/config/permissions/privapp-permissions-aim-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-aim.xml
 
 # Enforce privapp-permissions whitelist
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -83,15 +81,7 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Hidden API whitelist
 PRODUCT_COPY_FILES += \
-    vendor/aim/config/permissions/lineage-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/lineage-hiddenapi-package-whitelist.xml
-
-# Power whitelist
-PRODUCT_COPY_FILES += \
-    vendor/aim/config/permissions/lineage-power-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/lineage-power-whitelist.xml
-
-# Pre-granted permissions
-PRODUCT_COPY_FILES += \
-    vendor/aim/config/permissions/lineage-default-permissions.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/lineage-default-permissions.xml
+    vendor/aim/config/permissions/aim-hiddenapi-package-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/aim-hiddenapi-package-whitelist.xml
 
 # Include AOSP audio files
 include vendor/aim/config/aosp_audio.mk
